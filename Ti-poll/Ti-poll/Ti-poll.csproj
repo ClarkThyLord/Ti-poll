@@ -69,6 +69,9 @@
     <Compile Include="Clases\Profile.cs" />
     <Compile Include="Clases\Survey.cs" />
     <Compile Include="Clases\User.cs" />
+    <Compile Include="Points Store.xaml.cs">
+      <DependentUpon>Points Store.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Points Store.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Profile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -174,6 +181,11 @@
     <Resource Include="Assets\best buy logo.PNG" />
     <Resource Include="Assets\starbucks logo.jpg" />
     <Resource Include="Assets\target logo.jpg" />
+    <Resource Include="Assets\100 points.png" />
+    <Resource Include="Assets\250 points.png" />
+    <Resource Include="Assets\1000 points.png" />
+    <Resource Include="Assets\500 points.png" />
+    <Resource Include="Assets\earn points.png" />
     <Content Include="Assets\Ti-poll.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

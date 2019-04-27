@@ -98,9 +98,11 @@ namespace Ti_poll
                     return;
                 }
 
-                Database.data.GetProfile(id);
+                Clases.Survey survey = Database.data.GetSurvey(id);
 
-                Survey s = new Survey();
+                if (survey == null) return;
+
+                Survey s = new Survey(survey);
                 s.Owner = this;
                 s.Show();
                 Hide();

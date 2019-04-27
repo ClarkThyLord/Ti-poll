@@ -67,5 +67,13 @@ namespace Ti_poll
         {
             profile_button.Content = Database.CurrentUser.Name;
         }
+
+        private void PointsMoney_button_Click(object sender, RoutedEventArgs e)
+        {
+            Points_Store ps = new Points_Store();
+            ps.Owner = this;
+            ps.Show();
+            Hide();
+        }
     }
 }

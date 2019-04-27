@@ -19,8 +19,11 @@ namespace Ti_poll
     /// </summary>
     public partial class Survey : Window
     {
-        public Survey()
+        public Clases.Survey survey;
+
+        public Survey(Clases.Survey survey)
         {
+            this.survey = survey;
             InitializeComponent();
         }
 
