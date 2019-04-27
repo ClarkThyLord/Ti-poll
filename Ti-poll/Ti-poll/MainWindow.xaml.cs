@@ -47,17 +47,10 @@ namespace Ti_poll
         {
             splashscreen = new SpalshScreen();
             splashscreen.Owner = this;
-            splashscreen.Finished += Splashscreen_Finished;
             splashscreen.Start();
 
             this.Hide();
             splashscreen.Show();
-        }
-
-        private void Splashscreen_Finished(object sender, EventArgs e)
-        {
-            splashscreen.Hide();
-            this.Show();
         }
     }
 }
