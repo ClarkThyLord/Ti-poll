@@ -45,8 +45,9 @@
         </ProgressBar>
         <ComboBox x:Name="combo_cb" HorizontalAlignment="Left" Margin="612,105,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content="Gender"/>
-            <ComboBoxItem Content="Ethnicity"/>
+            <ComboBoxItem Content="Age"/>
+            <ComboBoxItem Content="Relationship"/>
         </ComboBox>
-        <ListBox HorizontalAlignment="Left" Height="275" Margin="27,105,0,0" VerticalAlignment="Top" Width="252"/>
+        <ListBox Name="questions_lb" HorizontalAlignment="Left" Height="275" Margin="27,105,0,0" VerticalAlignment="Top" Width="252"/>
     </Grid>
 </Window>

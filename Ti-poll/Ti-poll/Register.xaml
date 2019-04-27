@@ -13,7 +13,7 @@
         <Image Source="Assets/Ti-poll.png" Margin="367,10,356.6,310"/>
         <Label Content="Ti-poll" Margin="312,0,307.6,239" FontSize="50" Height="69" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" FontFamily="Showcard Gothic"/>
         <Button Content="VOLVER" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="75" FontFamily="Showcard Gothic" Click="cancel_Click"/>
-        <Grid x:Name="PageOne" Margin="268,194,258.6,27">
+        <Grid x:Name="PageOne" Margin="248,181,278.6,40">
             <Label Content="Name:" HorizontalAlignment="Left" Margin="54,19,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic"/>
             <Label Content="Username:" HorizontalAlignment="Left" Margin="25,50,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic"/>
             <Label Content="Password:" HorizontalAlignment="Left" Margin="22,86,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic"/>
@@ -30,7 +30,7 @@
 
             <Button Content="Continue" HorizontalAlignment="Left" Margin="106,161,0,0" VerticalAlignment="Top" Width="75" Click="continue_Click" FontFamily="Showcard Gothic"/>
         </Grid>
-        <Grid  x:Name="PageTwo" HorizontalAlignment="Left" Height="208" Margin="291,186,0,0" VerticalAlignment="Top" Width="224" d:IsHidden="True">
+        <Grid  x:Name="PageTwo" HorizontalAlignment="Left" Height="208" Margin="270,181,0,0" VerticalAlignment="Top" Width="224" d:IsHidden="True">
             <TextBox HorizontalAlignment="Left" Height="23" Margin="102,70,0,0" TextWrapping="Wrap" Text="" x:Name="country1" VerticalAlignment="Top" Width="120"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="102,128,0,0" TextWrapping="Wrap" Text="" x:Name="income1" VerticalAlignment="Top" Width="120"/>
 
@@ -57,8 +57,8 @@
             <TextBox HorizontalAlignment="Left" Height="23" Margin="102,155,0,-19" TextWrapping="Wrap" Text="" x:Name="sex_txt" VerticalAlignment="Top" Width="120"/>
             <Label x:Name="sex_lbl" Content="Sexuality:" HorizontalAlignment="Left" Margin="24,156,0,-21" VerticalAlignment="Top" FontFamily="Showcard Gothic"/>
 
-            <Button  x:Name="finish_btn" Content="Register" Margin="78,0,71,0" VerticalAlignment="Bottom" FontFamily="Showcard Gothic" Click="finished_Click"/>
-            <Button Content="&lt;" HorizontalAlignment="Left" Margin="0,187,0,0" VerticalAlignment="Top" Width="46" FontFamily="Showcard Gothic" Height="18" FontSize="16" Click="Button_Click"/>
+            <Button  x:Name="finish_btn" Content="Register" Margin="102,0,47,0" VerticalAlignment="Bottom" FontFamily="Showcard Gothic" Click="finished_Click"/>
+            <Button Content="&lt;" HorizontalAlignment="Left" Margin="24,187,0,0" VerticalAlignment="Top" Width="46" FontFamily="Showcard Gothic" Height="18" FontSize="16" Click="Button_Click"/>
         </Grid>
     </Grid>
 </Window>
