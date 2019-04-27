@@ -19,6 +19,8 @@ namespace Ti_poll
     /// </summary>
     public partial class Register : Window
     {
+        private bool redirect = false;
+
         public Register()
         {
             InitializeComponent();
@@ -26,18 +28,19 @@ namespace Ti_poll
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            Owner.Show();
-            Close();
+            if (!redirect)
+            {
+                Owner.Show();
+                Close();
+            }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void register_Click(object sender, RoutedEventArgs e)
         {
-            finish_txt.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Owner.Show();
+            redirect = true;
+            Home home = new Home();
+            home.Owner = Owner;
+            home.Show();
             Close();
         }
     }
