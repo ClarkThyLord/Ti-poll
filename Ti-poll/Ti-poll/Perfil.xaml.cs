@@ -23,5 +23,17 @@ namespace Ti_poll
         {
             InitializeComponent();
         }
+
+        private void BttnGuardar_Click(object sender, RoutedEventArgs e)
+        {
+            Perfil popup = new Perfil();
+            string messsage = "Save successfully";
+            popup.ShowDialog(messsage);
+        }
+
+        private void ShowDialog(string messsage)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

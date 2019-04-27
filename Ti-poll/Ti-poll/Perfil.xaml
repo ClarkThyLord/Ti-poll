@@ -5,18 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Perfil" Height="737.679" Width="318.551">
+        Title="Perfil" Height="529.679" Width="793">
     <Grid Background="White">
-        <Label Content="Nombre:" HorizontalAlignment="Left" Height="29" Margin="48,311,0,0" VerticalAlignment="Top" Width="114"/>
-        <TextBox x:Name="txtBOX_Nombre" HorizontalAlignment="Left" Height="42" Margin="48,345,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
-        <Label Content="Edad:" HorizontalAlignment="Left" Height="29" Margin="48,392,0,0" VerticalAlignment="Top" Width="114"/>
-        <TextBox x:Name="txtBOX_Edad" HorizontalAlignment="Left" Height="42" Margin="48,426,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
-        <Label Content="País:" HorizontalAlignment="Left" Height="29" Margin="48,473,0,0" VerticalAlignment="Top" Width="114"/>
-        <TextBox x:Name="txtBOX_País" HorizontalAlignment="Left" Height="42" Margin="48,507,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
-        <Label Content="Puntos:" HorizontalAlignment="Left" Height="29" Margin="48,554,0,0" VerticalAlignment="Top" Width="114"/>
-        <TextBox x:Name="txtBOX_Puntos" HorizontalAlignment="Left" Height="42" Margin="48,588,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
-        <Image x:Name="image_Perfil" HorizontalAlignment="Left" Height="196" Margin="32,110,0,0" VerticalAlignment="Top" Width="236"/>
-        <Label Content="Perfil" HorizontalAlignment="Left" Height="95" Margin="32,10,0,0" VerticalAlignment="Top" Width="236" FontSize="48"/>
+        <Grid HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="793" Background="#FF173299">
+            <Label Content="Perfil" HorizontalAlignment="Left" Height="53" Margin="29,10,0,0" VerticalAlignment="Top" Width="72" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24"/>
+
+        </Grid>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Height="29" Margin="48,78,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtBOX_Nombre" HorizontalAlignment="Left" Height="42" Margin="48,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Edad:" HorizontalAlignment="Left" Height="29" Margin="48,154,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtBOX_Edad" HorizontalAlignment="Left" Height="42" Margin="48,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Label Content="País:" HorizontalAlignment="Left" Height="29" Margin="48,230,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtBOX_País" HorizontalAlignment="Left" Height="42" Margin="48,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Puntos:" HorizontalAlignment="Left" Height="29" Margin="48,306,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtBOX_Puntos" HorizontalAlignment="Left" Height="42" Margin="48,335,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Image x:Name="image_Perfil" HorizontalAlignment="Left" Height="270" Margin="349,107,0,0" VerticalAlignment="Top" Width="386"/>
+        <Button x:Name="bttnGuardar" Content="Guardar" HorizontalAlignment="Left" Height="74" Margin="48,416,0,0" VerticalAlignment="Top" Width="146" Click="BttnGuardar_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="74" Margin="221,416,0,0" VerticalAlignment="Top" Width="147"/>
 
     </Grid>
 </Window>
