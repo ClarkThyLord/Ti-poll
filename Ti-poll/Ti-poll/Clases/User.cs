@@ -16,6 +16,7 @@ namespace Ti_poll
         public string Password = "";
         public int Age = 0;
         public bool Registered = false;
+        public int Points = 0;
 
         public struct Background
         {

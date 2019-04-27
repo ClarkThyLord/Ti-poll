@@ -5,50 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Perfil" Height="529.679" Width="793" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
+        Title="Perfil" Height="529.679" Width="793" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png" Loaded="Window_Loaded">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
-        <Grid HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="793" Background="#FFAF0D0D">
-            <Label Content="Profile" HorizontalAlignment="Left" Height="53" Margin="29,10,0,0" VerticalAlignment="Top" Width="120" Background="#FFAF0D0D" Foreground="White" FontSize="24" FontFamily="Showcard Gothic"/>
-
+        <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.6,0">
+            <Label x:Name="nickname" Content="NAME" Height="53" Margin="29,10,473,0" VerticalAlignment="Top" Background="#FFAF0D0D" Foreground="White" FontSize="24" FontFamily="Showcard Gothic"/>
+            <Label Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="633,10,0,0" Height="53" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFDB61C" MouseDown="save_Click"/>
+            <Label Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="708,10,0,0" Height="53" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFDB61C" MouseDown="exit_Click"/>
         </Grid>
         <Label Content="Name:" HorizontalAlignment="Left" Height="29" Margin="48,78,0,0" VerticalAlignment="Top" Width="114" FontFamily="Showcard Gothic"/>
-        <Label Content="Age:" HorizontalAlignment="Left" Height="29" Margin="48,137,0,0" VerticalAlignment="Top" Width="114" FontFamily="Showcard Gothic"/>
-        <Label Content="Points:" HorizontalAlignment="Left" Height="29" Margin="48,196,0,0" VerticalAlignment="Top" Width="114" FontFamily="Showcard Gothic"/>
-        <Button x:Name="bttnGuardar" Content="Save" HorizontalAlignment="Left" Height="74" Margin="48,282,0,0" VerticalAlignment="Top" Width="147" Click="BttnGuardar_Click"/>
-        <Button x:Name="bttnSalir" Content="Close" HorizontalAlignment="Left" Height="74" Margin="48,371,0,0" VerticalAlignment="Top" Width="147" Click="BttnSalir_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="48,104,0,0" TextWrapping="Wrap" Text="" x:Name="name_lbl" VerticalAlignment="Top" Width="120"/>
-        <Label Content="" x:Name="age_lbl" HorizontalAlignment="Left" Margin="48,188,0,0" VerticalAlignment="Top"/>
-        <Label Content="" x:Name="country_lbl" HorizontalAlignment="Left" Margin="48,275,0,0" VerticalAlignment="Top"/>
-        <Label Content="" x:Name="points_lbl" HorizontalAlignment="Left" Margin="48,340,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="48,104,0,0" TextWrapping="Wrap" Text="" x:Name="name" VerticalAlignment="Top" Width="120"/>
 
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="441,387,0,0" TextWrapping="Wrap" Text="" x:Name="sex_txt" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
-        <Label x:Name="sex_lbl" Content="Sexuality:" HorizontalAlignment="Left" Margin="441,361,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
-        <Label x:Name="ethnicity" Content="Ethnicity:" HorizontalAlignment="Left" Margin="439,250,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
-        <Label x:Name="income" Content="Income:" HorizontalAlignment="Left" Margin="441,302,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
-        <Label x:Name="relationship" Content="Relationship:" HorizontalAlignment="Left" Margin="439,137,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
-        <Label x:Name="country" Content="Country:" HorizontalAlignment="Left" Margin="439,196,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
-        <Label x:Name="gender1" Content="Gender:" HorizontalAlignment="Left" Margin="439,73,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Height="29" Margin="48,137,0,0" VerticalAlignment="Top" Width="114" FontFamily="Showcard Gothic"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="48,168,0,0" TextWrapping="Wrap" Text="" x:Name="age" VerticalAlignment="Top" Width="120"/>
+        
+        <Label Content="Password:" HorizontalAlignment="Left" Height="29" Margin="48,204,0,0" VerticalAlignment="Top" Width="114" FontFamily="Showcard Gothic"/>
+        <PasswordBox HorizontalAlignment="Left" Height="23" Margin="48,235,0,0" x:Name="password" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Points:" HorizontalAlignment="Left" Height="29" Margin="48,258,0,0" VerticalAlignment="Top" Width="114" FontFamily="Showcard Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="48,285,0,0" TextWrapping="Wrap" Text="POINTS" x:Name="points" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+
+        <Label Content="Gender:" HorizontalAlignment="Left" Margin="439,73,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
         <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="439,104,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible">
             <ComboBoxItem Content="Male"/>
             <ComboBoxItem Content="Female"/>
         </ComboBox>
-        <ComboBox x:Name="relationship1" HorizontalAlignment="Left" Margin="439,168,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible">
+
+        <Label Content="Relationship:" HorizontalAlignment="Left" Margin="439,137,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
+        <ComboBox x:Name="relationship" HorizontalAlignment="Left" Margin="439,168,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible">
             <ComboBoxItem Content="Married"/>
             <ComboBoxItem Content="Single"/>
         </ComboBox>
-        <ComboBox x:Name="ethnicity1" HorizontalAlignment="Left" Margin="439,275,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible">
+
+        <Label Content="Country:" HorizontalAlignment="Left" Margin="439,196,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="439,274,0,0" TextWrapping="Wrap" Text="" x:Name="country" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+
+        <Label Content="Ethnicity:" HorizontalAlignment="Left" Margin="439,250,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
+        <ComboBox x:Name="ethnicity" HorizontalAlignment="Left" Margin="441,220,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible">
             <ComboBoxItem Content="African"/>
             <ComboBoxItem Content="Asian"/>
             <ComboBoxItem Content="Hispanic"/>
             <ComboBoxItem Content="White"/>
             <ComboBoxItem Content="Other"/>
         </ComboBox>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="48,168,0,0" TextWrapping="Wrap" Text="" x:Name="age_txtbtn" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="48,222,0,0" TextWrapping="Wrap" Text="" x:Name="points_txtbtn" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="439,222,0,0" TextWrapping="Wrap" Text="" x:Name="country1" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="441,333,0,0" TextWrapping="Wrap" Text="" x:Name="income1" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+
+        <Label Content="Income:" HorizontalAlignment="Left" Margin="441,302,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="441,333,0,0" TextWrapping="Wrap" Text="" x:Name="income" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+
+        <Label Content="Sexuality:" HorizontalAlignment="Left" Margin="441,361,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Visible"/>
+        <TextBox x:Name="sexuality" HorizontalAlignment="Left" Height="23" Margin="441,387,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
     </Grid>
 </Window>
