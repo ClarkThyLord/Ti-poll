@@ -98,5 +98,13 @@ namespace Ti_poll
                 }
             }
         }
+
+        private void PointsMoney_button_Click(object sender, RoutedEventArgs e)
+        {
+            Points_Store ps = new Points_Store();
+            ps.Owner = this;
+            ps.Show();
+            Hide();
+        }
     }
 }
