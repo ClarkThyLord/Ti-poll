@@ -21,7 +21,6 @@ namespace Ti_poll
     public partial class SpalshScreen : Window
     {
         public Timer timer;
-        public event EventHandler Finished;
 
         public SpalshScreen()
         {
@@ -42,8 +41,10 @@ namespace Ti_poll
                 if (progress.Value < 100) progress.Value += 1;
                 else
                 {
-                    timer.Enabled = false;
-                    Finished(this, EventArgs.Empty);
+                    timer.Dispose();
+                    Hide();
+                    Owner.Show();
+                    Close();
                 }
             }));
         }
