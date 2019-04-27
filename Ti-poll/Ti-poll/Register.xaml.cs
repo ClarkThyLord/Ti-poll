@@ -25,6 +25,7 @@ namespace Ti_poll
         public Register()
         {
             InitializeComponent();
+            PageTwo.Visibility = Visibility.Hidden;
         }
 
         private void Window_Closed(object sender, EventArgs e)
@@ -38,8 +39,13 @@ namespace Ti_poll
 
         private void continue_Click(object sender, RoutedEventArgs e)
         {
-            PageOne.Visibility = Visibility.Hidden;
-            PageTwo.Visibility = Visibility.Visible;
+            
+            if (name.Text.Length >0 && username.Text.Length >0 && password.Password.Length >0 && age.Text.Length >0)
+            {
+                PageOne.Visibility = Visibility.Hidden;
+                PageTwo.Visibility = Visibility.Visible;
+            }
+
         }
 
         private void finished_Click(object sender, RoutedEventArgs e)
@@ -75,6 +81,12 @@ namespace Ti_poll
         private void cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            PageOne.Visibility = Visibility.Visible;
+            PageTwo.Visibility = Visibility.Hidden;
         }
     }
 }
