@@ -36,21 +36,10 @@ namespace Ti_poll
             }
         }
 
-        private void registered_Click(object sender, RoutedEventArgs e)
+        private void continue_Click(object sender, RoutedEventArgs e)
         {
-            gender.Visibility = Visibility.Visible;
-            gender1.Visibility = Visibility.Visible;
-            country.Visibility = Visibility.Visible;
-            country1.Visibility = Visibility.Visible;
-            relationship.Visibility = Visibility.Visible;
-            relationship1.Visibility = Visibility.Visible;
-            income1.Visibility = Visibility.Visible;
-            income.Visibility = Visibility.Visible;
-            ethnicity.Visibility = Visibility.Visible;
-            ethnicity1.Visibility = Visibility.Visible;
-            finish_btn.Visibility = Visibility.Visible;
-            sex_lbl.Visibility = Visibility.Visible;
-            sex_txt.Visibility = Visibility.Visible;
+            PageOne.Visibility = Visibility.Hidden;
+            PageTwo.Visibility = Visibility.Visible;
         }
 
         private void finished_Click(object sender, RoutedEventArgs e)
