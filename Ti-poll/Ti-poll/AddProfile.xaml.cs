@@ -42,12 +42,8 @@ namespace Ti_poll
 
         private void Done_button_Click(object sender, RoutedEventArgs e)
         {
-            //Home H = new Home();
-            //Button a = new Button();
-            //H.panel.Children.Add(a);
-            //Owner.Owner.Show();
-            //Owner.Close();
-            //Close();
+            Owner.Show();
+            Close();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -60,8 +56,6 @@ namespace Ti_poll
 
         private void Add_quest_Click(object sender, RoutedEventArgs e)
         {
-            
-
             Clases.Profile profile = new Clases.Profile(titulo_encuesta.Text,base64ImageRepresentation);
 
             Clases.Database.data.Profiles.Add(profile);
