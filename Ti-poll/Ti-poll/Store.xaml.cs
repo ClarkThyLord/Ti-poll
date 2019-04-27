@@ -31,8 +31,8 @@ namespace Ti_poll
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            string messsage = "Successful Purchase";
-            MessageBox.Show(messsage);
+            string message = "successfully Purchase";
+            MessageBox.Show(message);
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

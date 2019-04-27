@@ -12,16 +12,16 @@
             <Label Content="Points:" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="523,10,0,0" VerticalAlignment="Top" Width="236"/>
         </Grid>
         <StackPanel HorizontalAlignment="Left" Height="202" Margin="241,109,0,0" VerticalAlignment="Top" Width="507">
-            <RadioButton Content="Starbucks $15 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton Content="Starbucks $30 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton Content="Starbucks $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton Content="Best Buy $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton Content="Best Buy $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton Content="Target $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton Content="Target $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton x:Name="rdbtn_starbucks15" Content="Starbucks $15 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton x:Name="rdbtn_starbucks30" Content="Starbucks $30 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton x:Name="rdbtn_starbucks50" Content="Starbucks $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton x:Name="rdbtn_bestbuy15" Content="Best Buy $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton x:Name="rdbtn_bestbuy50" Content="Best Buy $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton x:Name="rdbtn_target15" Content="Target $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton x:Name="rdbtn_target50" Content="Target $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
         </StackPanel>
-        <Button Content="Buy" HorizontalAlignment="Left" Height="37" Margin="207,345,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click_1"/>
-        <Button Content="Close" HorizontalAlignment="Left" Height="37" Margin="420,345,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click"/>
+        <Button x:Name="btnBuy" Content="Buy" HorizontalAlignment="Left" Height="37" Margin="207,345,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click_1"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="37" Margin="420,345,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click"/>
 
     </Grid>
 </Window>
