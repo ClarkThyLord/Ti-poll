@@ -23,5 +23,6 @@ namespace Ti_poll
         {
             InitializeComponent();
         }
+
     }
 }
