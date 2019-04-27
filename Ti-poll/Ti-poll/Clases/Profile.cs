@@ -26,7 +26,7 @@ namespace Ti_poll.Clases
         }
         public List<Response> Responses = new List<Response>();
         
-        public Image Image = null;
+        public string Image = null;
 
         public Profile() { }
 
@@ -37,12 +37,12 @@ namespace Ti_poll.Clases
             this.Question = Question;
         }
 
-        public Profile(string Question, Image Image) : this(Question)
+        public Profile(string Question, string Image) : this(Question)
         {
             this.Image = Image;
         }
 
-        public Profile(string Question, Image Image, List<Response> Responses) : this(Question, Image)
+        public Profile(string Question, string Image, List<Response> Responses) : this(Question, Image)
         {
             this.Responses = Responses;
         }
@@ -54,13 +54,13 @@ namespace Ti_poll.Clases
             this.Question = Question;
         }
 
-        public Profile(int ID, string Question, Image Image) : this(ID, Question)
+        public Profile(int ID, string Question, string Image) : this(ID, Question)
         {
             this.Image = Image;
         }
 
         [JsonConstructor]
-        public Profile(int ID, string Question, Image Image, List<Response> Responses) : this(ID, Question, Image)
+        public Profile(int ID, string Question, string Image, List<Response> Responses) : this(ID, Question, Image)
         {
             this.Responses = Responses;
         }

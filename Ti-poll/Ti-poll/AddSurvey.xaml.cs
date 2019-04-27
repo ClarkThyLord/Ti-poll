@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Ti_poll.Clases;
 
 namespace Ti_poll
 {
@@ -30,6 +31,8 @@ namespace Ti_poll
             if (titulo_encuesta.Text.Length > 0 && categoria_encuesta.Text.Length > 0)
             {
                 survey = new Clases.Survey(privadopublico());
+                Database.CurrentUser.Surveys.Add(survey.ID);
+                Database.data.save();
                 AddQuestion aq = new AddQuestion();
                 aq.Owner = this;
                 aq.Show();

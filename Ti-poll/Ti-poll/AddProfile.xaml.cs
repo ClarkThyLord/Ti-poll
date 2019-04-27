@@ -21,6 +21,7 @@ namespace Ti_poll
     public partial class AddQuestion : Window
     {
         List<int> profiles;
+        string base64ImageRepresentation;
         public AddQuestion()
         {
             InitializeComponent();
@@ -34,7 +35,9 @@ namespace Ti_poll
             {
                 pic.Source = new BitmapImage(new Uri(of.FileName));
             }
-            
+            byte[] imageArray = File.ReadAllBytes(of.FileName);
+            base64ImageRepresentation = Convert.ToBase64String(imageArray);
+
         }
 
         private void Done_button_Click(object sender, RoutedEventArgs e)
@@ -57,7 +60,9 @@ namespace Ti_poll
 
         private void Add_quest_Click(object sender, RoutedEventArgs e)
         {
-            Clases.Profile profile = new Clases.Profile(titulo_encuesta.Text,pic);
+            
+
+            Clases.Profile profile = new Clases.Profile(titulo_encuesta.Text,base64ImageRepresentation);
             Clases.Database.data.Profiles.Add(profile);
             Clases.Database.data.save();
             profiles.Add(profile.ID);
