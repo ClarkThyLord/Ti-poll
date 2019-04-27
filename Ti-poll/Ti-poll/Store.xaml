@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Store" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
-    <Grid>
+        Title="Store" Height="364.8" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
+    <Grid Margin="0,0,-0.4,-1">
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
@@ -14,17 +14,68 @@
             <Label Content="Store" Background="#FFAF0D12" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
             <Label Content="Points:" Background="{x:Null}" BorderBrush="#FFAF0D10" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="523,10,0,0" VerticalAlignment="Top" Width="236"/>
         </Grid>
-        <StackPanel HorizontalAlignment="Left" Height="202" Margin="241,109,0,0" VerticalAlignment="Top" Width="507">
-            <RadioButton x:Name="rdbtn_starbucks15" Content="Starbucks $15 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton x:Name="rdbtn_starbucks30" Content="Starbucks $30 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton x:Name="rdbtn_starbucks50" Content="Starbucks $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton x:Name="rdbtn_bestbuy15" Content="Best Buy $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton x:Name="rdbtn_bestbuy50" Content="Best Buy $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton x:Name="rdbtn_target15" Content="Target $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
-            <RadioButton x:Name="rdbtn_target50" Content="Target $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+        <StackPanel x:Name="stackPanel_Starbucks" HorizontalAlignment="Left" Height="143" Margin="10,78,0,0" VerticalAlignment="Top" Width="368">
+            <RadioButton x:Name="rdbtn_Starbucks15" Margin="0,0,164,0">
+                <WrapPanel>
+                    <Image Source="Assets/starbucks logo.jpg" Width="50" Height="50"/>
+                    <TextBlock Text="Starbucks $15 giftcard" Height="20" Width="127"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="rdbtn_Starbucks30" Margin="0,0,164,0">
+                <WrapPanel>
+                    <Image Source="Assets/starbucks logo.jpg" Width="50" Height="50"/>
+                    <TextBlock Text="Starbucks $30 giftcard" Height="20" Width="122"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="rdbtn_Starbucks50" Margin="0,0,164,0">
+                <WrapPanel>
+                    <Image Source="Assets/starbucks logo.jpg" Width="50" Height="50"/>
+                    <TextBlock Text="Starbucks $50 giftcard" Height="20" Width="122"/>
+                </WrapPanel>
+            </RadioButton>
         </StackPanel>
-        <Button x:Name="btnBuy" Content="Buy" HorizontalAlignment="Left" Height="37" Margin="207,345,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click_1"/>
-        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="37" Margin="420,345,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click"/>
+        <StackPanel x:Name="stackPanel_BestBuy" HorizontalAlignment="Left" Height="143" Margin="383,78,0,0" VerticalAlignment="Top" Width="363">
+            <RadioButton x:Name="rdbtn_BestBuy15" Margin="0,0,167,0">
+                <WrapPanel>
+                    <Image Source="Assets/best buy logo.png" Width="50" Height="50"/>
+                    <TextBlock Text="Best Buy $15 giftcard" Height="20" Width="122"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="rdbtn_BestBuy30" Margin="0,0,167,0">
+                <WrapPanel>
+                    <Image Source="Assets/best buy logo.png" Width="50" Height="50"/>
+                    <TextBlock Text="Best Buy $30 giftcard" Height="20" Width="122"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="rdbtn_BestBuy50" Margin="0,0,167.2,0">
+                <WrapPanel>
+                    <Image Source="Assets/best buy logo.png" Width="50" Height="50"/>
+                    <TextBlock Text="Best Buy $50 giftcard" Height="20" Width="122"/>
+                </WrapPanel>
+            </RadioButton>
+        </StackPanel>
+        <StackPanel x:Name="stackPanel_Target" HorizontalAlignment="Left" Height="143" Margin="383,226,0,0" VerticalAlignment="Top" Width="368">
+            <RadioButton x:Name="rdbtn_Target15" Margin="0,0,174,0">
+                <WrapPanel>
+                    <Image Source="Assets/target logo.jpg" Width="50" Height="50"/>
+                    <TextBlock Text="Target $15 giftcard" Height="20" Width="122"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="rdbtn_Target30" Margin="0,0,174,0">
+                <WrapPanel>
+                    <Image Source="Assets/target logo.jpg" Width="50" Height="50"/>
+                    <TextBlock Text="Target $30 giftcard" Height="20" Width="122"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="rdbtn_Target50" Margin="0,0,174,0">
+                <WrapPanel>
+                    <Image Source="Assets/target logo.jpg" Width="50" Height="50"/>
+                    <TextBlock Text="Target $50 giftcard" Height="20" Width="122"/>
+                </WrapPanel>
+            </RadioButton>
+        </StackPanel>
+        <Button x:Name="btnBuy" Content="Buy" HorizontalAlignment="Left" Height="37" Margin="107,263,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click_1"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="37" Margin="107,305,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click"/>
 
     </Grid>
 </Window>

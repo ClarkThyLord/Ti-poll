@@ -171,6 +171,9 @@
     <Resource Include="Assets\Ti-poll.png" />
     <Resource Include="Assets\Cross.png" />
     <Resource Include="Assets\Ok.png" />
+    <Resource Include="Assets\best buy logo.PNG" />
+    <Resource Include="Assets\starbucks logo.jpg" />
+    <Resource Include="Assets\target logo.jpg" />
     <Content Include="Assets\Ti-poll.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
