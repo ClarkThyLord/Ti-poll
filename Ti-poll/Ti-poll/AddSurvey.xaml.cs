@@ -58,7 +58,7 @@ namespace Ti_poll
                 return false;
             }
         }
-        public void addlist(List<Clases.Profile> l)
+        public void addlist(List<int> l)
         {
             survey.profiles = l;
         }
