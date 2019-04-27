@@ -39,8 +39,7 @@ namespace Ti_poll
         {
             Home h = new Home();
             h.Show();
-            h.Owner = this;
-            Hide();
+            Close();
             
         }
 
