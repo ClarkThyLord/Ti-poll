@@ -28,12 +28,21 @@ namespace Ti_poll
         {
             if (e.Key == Key.Enter)
             {
-
+                Survey s = new Survey();
+                user_txt.Text = "";
+                pass_txt.Password = "";
+                survey_code.Text = "";
+                s.Owner = this;
+                s.Show();
+                Hide();
             }
         }
 
         private void login_button_Click(object sender, RoutedEventArgs e)
         {
+            user_txt.Text = "";
+            pass_txt.Password = "";
+            survey_code.Text = "";
             Home h = new Home();
             h.Owner = this;
             h.Show();

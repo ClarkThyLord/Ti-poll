@@ -29,5 +29,11 @@ namespace Ti_poll
             Owner.Show();
             Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string messsage = "Successful Purchase";
+            MessageBox.Show(messsage);
+        }
     }
 }

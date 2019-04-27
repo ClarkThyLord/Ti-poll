@@ -23,7 +23,7 @@
             </StackPanel>
         </Button>
         <Button Content="Reported" HorizontalAlignment="Left" Height="79" Margin="10,421,0,0" VerticalAlignment="Top" Width="170"/>
-        <Button Content="Close" HorizontalAlignment="Left" Height="79" Margin="623,421,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button Content="Close" HorizontalAlignment="Left" Height="79" Margin="623,421,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click"/>
 
     </Grid>
 </Window>
