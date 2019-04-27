@@ -32,10 +32,8 @@ namespace Ti_poll
 
         private void BttnSalir_Click(object sender, RoutedEventArgs e)
         {
-            Home h = new Home();
-            h.Show();
-            h.Owner = this;
-            Hide();
+            Owner.Show();
+            Close();
         }
     }
 }

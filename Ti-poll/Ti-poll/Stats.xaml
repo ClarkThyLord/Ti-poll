@@ -5,23 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Stats" Height="450" Width="800">
+        Title="Stats" Height="871.473" Width="1558.571">
     <Grid>
         <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
             <Label Content="Results of the survey" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
         </Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="525,224,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" SelectedIndex="0">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                    <GradientStop Color="#FFE5E5E5" Offset="1"/>
-                    <GradientStop Color="#FFE5E5E5" Offset="2"/>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF00FFF1" Offset="1"/>
                 </LinearGradientBrush>
-            </ComboBox.Background>
-            <ComboBoxItem Content="Search by diferent results:" IsEnabled="False" IsSelected="True"/>
-            <ComboBoxItem Content="People who answered in general"/>
-            <ComboBoxItem Content="Mens who answered"/>
-            <ComboBoxItem Content="Womens who answered"/>
-        </ComboBox>
+            </Grid.Background>
+            <local:CustomChartControl HorizontalAlignment="Left" Height="468" Margin="491,170,0,0" VerticalAlignment="Top" Width="672" BarsColor="Red" DataSource="C:\Users\alecf\Documents\GitHub\Ti-poll\information for graph.txt"/>
+
+        </Grid>
     </Grid>
 </Window>

@@ -15,21 +15,19 @@ using System.Windows.Shapes;
 namespace Ti_poll
 {
     /// <summary>
-    /// Interaction logic for AddSurvey.xaml
+    /// Interaction logic for Store.xaml
     /// </summary>
-    public partial class AddSurvey : Window
+    public partial class Store : Window
     {
-        public AddSurvey()
+        public Store()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Add_Question aq = new Add_Question();
-            aq.Owner = this;
-            aq.Show();
-            Hide();
+            Owner.Show();
+            Close();
         }
     }
 }
