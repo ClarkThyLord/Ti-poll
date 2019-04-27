@@ -31,8 +31,15 @@ namespace Ti_poll
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            string answer = "Successfully purchases!";
-            MessageBox.Show(answer);
+            if(MessageBox.Show("Are you sure to buy those items or this item?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                string answer = "Successfully purchased!";
+                MessageBox.Show(answer);
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

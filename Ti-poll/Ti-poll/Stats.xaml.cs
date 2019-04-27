@@ -91,5 +91,14 @@ namespace Ti_poll
 
             }));
         }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Home h = new Home();
+            h.Owner = this;
+            h.Show();
+            Hide();
+
+        }
     }
 }
