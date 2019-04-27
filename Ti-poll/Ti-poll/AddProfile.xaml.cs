@@ -20,6 +20,7 @@ namespace Ti_poll
     /// </summary>
     public partial class AddQuestion : Window
     {
+        List<Clases.Profile> profiles;
         public AddQuestion()
         {
             InitializeComponent();
@@ -48,12 +49,15 @@ namespace Ti_poll
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            (Owner as AddSurvey).addlist(profiles);
             Owner.Owner.Show();
             Owner.Close();
         }
 
         private void Add_quest_Click(object sender, RoutedEventArgs e)
         {
+            Clases.Profile profile = new Clases.Profile(titulo_encuesta.Text,pic);
+            profiles.Add(profile);
             int num = titulo_encuesta.Text.Length;
             if (titulo_encuesta.Text.Length>0)
             {
@@ -68,7 +72,7 @@ namespace Ti_poll
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            profiles = new List<Clases.Profile>();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

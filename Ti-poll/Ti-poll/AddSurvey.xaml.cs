@@ -19,6 +19,7 @@ namespace Ti_poll
     /// </summary>
     public partial class AddSurvey : Window
     {
+        Clases.Survey survey;
         public AddSurvey()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace Ti_poll
         {
             if (titulo_encuesta.Text.Length > 0 && categoria_encuesta.Text.Length > 0)
             {
-                
+                survey = new Clases.Survey(privadopublico());
                 AddQuestion aq = new AddQuestion();
                 aq.Owner = this;
                 aq.Show();
@@ -40,14 +41,26 @@ namespace Ti_poll
                 string h = "No deje espacios en blanco";
                 MessageBox.Show(h);
             }
-
-
-            
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Owner.Show();
+        }
+        public bool privadopublico()
+        {
+            if (Publico.IsChecked==true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public void addlist(List<Clases.Profile> l)
+        {
+            survey.profiles = l;
         }
     }
 }
