@@ -24,5 +24,13 @@ namespace Ti_poll
         {
             InitializeComponent();
         }
+
+        private void survey_code_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key==Key.Enter)
+            {
+
+            }
+        }
     }
 }
