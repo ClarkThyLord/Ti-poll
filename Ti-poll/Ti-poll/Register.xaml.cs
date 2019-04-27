@@ -49,6 +49,8 @@ namespace Ti_poll
             ethnicity.Visibility = Visibility.Visible;
             ethnicity1.Visibility = Visibility.Visible;
             finish_btn.Visibility = Visibility.Visible;
+            sex_lbl.Visibility = Visibility.Visible;
+            sex_txt.Visibility = Visibility.Visible;
         }
 
         private void finish_btn_Click(object sender, RoutedEventArgs e)
