@@ -10,8 +10,8 @@
         <Grid.Background>
             <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
         </Grid.Background>
-        <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
-            <Label Content="Survey" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="152" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24"/>
+        <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
+            <Label Content="Survey" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="152" Background="#FFAF0D0D" Foreground="White" FontSize="24"/>
         </Grid>
         <TextBox x:Name="txtBOX_Pregunta" HorizontalAlignment="Left" Height="50" Margin="199,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="390"/>
         <Image HorizontalAlignment="Left" Height="212" Margin="196,115,0,0" VerticalAlignment="Top" Width="390"/>

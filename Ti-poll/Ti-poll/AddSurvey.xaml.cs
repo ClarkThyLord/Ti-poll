@@ -33,7 +33,6 @@ namespace Ti_poll
                 aq.Owner = this;
                 aq.Show();
                 Hide();
-                aq.name_lbl.Content = titulo_encuesta.Text;
                 
             }
             else

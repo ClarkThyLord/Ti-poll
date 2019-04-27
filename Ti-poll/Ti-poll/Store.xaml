@@ -10,9 +10,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
         </Grid.Background>
-        <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
-            <Label Content="Store" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
-            <Label Content="Points:" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="523,10,0,0" VerticalAlignment="Top" Width="236"/>
+        <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
+            <Label Content="Store" Background="#FFAF0D12" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
+            <Label Content="Points:" Background="{x:Null}" BorderBrush="#FFAF0D10" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="523,10,0,0" VerticalAlignment="Top" Width="236"/>
         </Grid>
         <StackPanel HorizontalAlignment="Left" Height="202" Margin="241,109,0,0" VerticalAlignment="Top" Width="507">
             <RadioButton Content="Starbucks $15 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>

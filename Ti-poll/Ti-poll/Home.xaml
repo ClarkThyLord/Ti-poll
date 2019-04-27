@@ -12,7 +12,7 @@
         </Grid.Background>
         <StackPanel Height="201" Margin="138,105,141.333,0" VerticalAlignment="Top" Background="White"/>
         <Button x:Name="Add_Survey" Content="+" Margin="361,311,359.333,0" FontSize="48" Height="62" VerticalAlignment="Top" Click="Add_Survey_Click"/>
-        <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
+        <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
             <TextBox x:Name="searchbar" HorizontalAlignment="Right" Margin="0,30,27,17" TextWrapping="Wrap" Width="211" KeyDown="searchbar_KeyDown"/>
             <ComboBox HorizontalAlignment="Right" Margin="0,31,279,21" Width="120" BorderBrush="White" SelectedIndex="0">
                 <ComboBox.Background>
@@ -26,8 +26,8 @@
                 <ComboBoxItem Content="Code"/>
             </ComboBox>
         </Grid>
-        <Button x:Name="profile_button" Content="Profile" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="profile_button_Click"/>
-        <Button x:Name="points_button" Content="Points:" Margin="90,0,0,0" Background="#FF173299" BorderBrush="#FF173299" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="points_button_Click"/>
+        <Button x:Name="profile_button" Content="Profile" Background="#FFAF0D0D" BorderBrush="{x:Null}" Foreground="White" FontSize="24" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="profile_button_Click"/>
+        <Button x:Name="points_button" Content="Points:" Margin="90,0,0,0" Background="#FFAF0D0D" BorderBrush="{x:Null}" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="points_button_Click"/>
 
     </Grid>
 </Window>
