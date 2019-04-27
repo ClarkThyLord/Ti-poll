@@ -1,0 +1,27 @@
+﻿<Window x:Class="Ti_poll.Survey"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ti_poll"
+        mc:Ignorable="d"
+        Title="Survey" Height="539.197" Width="809.643">
+    <Grid>
+        <Label Content="Survey" HorizontalAlignment="Left" Height="64" Margin="10,10,0,0" VerticalAlignment="Top" Width="126" FontSize="38"/>
+        <TextBox x:Name="txtBOX_Pregunta" HorizontalAlignment="Left" Height="76" Margin="196,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="390"/>
+        <Image HorizontalAlignment="Left" Height="188" Margin="196,139,0,0" VerticalAlignment="Top" Width="390"/>
+        <Button HorizontalAlignment="Left" Height="60" Margin="196,327,0,0" VerticalAlignment="Top">
+            <StackPanel>
+                <Image Source="Images/Incorrect sign.png" Width="195" Height="60"></Image>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="60" Margin="391,327,0,0" VerticalAlignment="Top">
+            <StackPanel>
+                <Image Source="Images/Correct sign.png" Width="195" Height="60"></Image>
+            </StackPanel>
+        </Button>
+        <Button Content="Reportar" HorizontalAlignment="Left" Height="79" Margin="10,421,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Height="79" Margin="623,421,0,0" VerticalAlignment="Top" Width="170"/>
+
+    </Grid>
+</Window>

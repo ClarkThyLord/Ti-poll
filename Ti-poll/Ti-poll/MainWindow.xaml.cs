@@ -32,5 +32,14 @@ namespace Ti_poll
 
             }
         }
+
+        private void login_button_Click(object sender, RoutedEventArgs e)
+        {
+            Home h = new Home();
+            h.Show();
+            h.Owner = this;
+            Hide();
+            
+        }
     }
 }
