@@ -26,30 +26,59 @@ namespace Ti_poll
 
         private void Imagebtn_100_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            if(MessageBox.Show("Are you sure to buy this item?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                string answer = "Successfully purchased!, you got 100 extra points!";
+                MessageBox.Show(answer);
+            }
         }
 
         private void Imagebtn_250_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            string answer = "Successfully purchase!";
-            MessageBox.Show(answer);
+            if (MessageBox.Show("Are you sure to buy this item?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                string answer = "Successfully purchased!, you got 250 extra points!";
+                MessageBox.Show(answer);
+            }
         }
 
         private void Imagebtn_500_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            string answer = "Successfully purchase!";
-            MessageBox.Show(answer);
+            if (MessageBox.Show("Are you sure to buy this item?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                string answer = "Successfully purchased!, you got 500 extra points!";
+                MessageBox.Show(answer);
+            }
         }
 
         private void Imagebtn_1000_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            string answer = "Successfully purchase!";
-            MessageBox.Show(answer);
+            if (MessageBox.Show("Are you sure to buy this item?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                string answer = "Successfully purchased!, you got 1000 extra points!";
+                MessageBox.Show(answer);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+
         }
     }
 }

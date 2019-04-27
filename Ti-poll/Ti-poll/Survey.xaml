@@ -15,12 +15,12 @@
             <TextBlock x:Name="txtBOX_Pregunta" HorizontalAlignment="Left" Height="50" Margin="204,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380" Background="{x:Null}"/>
         </Grid>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="282,0,281.2,93.6" Width="Auto" Height="136" VerticalAlignment="Bottom">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="275,0,288.2,78.6" Width="Auto" Height="136" VerticalAlignment="Bottom">
             <Image Source="Assets/Ok.png" Height="100" Width="100"  Margin="10" MouseDown="ok_MouseDown" HorizontalAlignment="Center"/>
             <Image Source="Assets/Cross.png" Height="100" Width="100"  Margin="10" MouseDown="cross_MouseDown" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <Image x:Name="image" Margin="196,115,217.2,182.6"/>
+        <Image x:Name="image" Margin="202,78,211.2,219.6"/>
 
         <Button Content="Reported" HorizontalAlignment="Left" Margin="10,0,0,9.6" Width="170" Height="79" VerticalAlignment="Bottom"/>
         <Button Content="Close" Margin="0,0,10.2,9.6" Click="exit_Pressed" Height="79" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="170"/>

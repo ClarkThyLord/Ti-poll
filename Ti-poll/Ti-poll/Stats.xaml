@@ -49,5 +49,6 @@
             <ComboBoxItem Content="Relationship"/>
         </ComboBox>
         <ListBox Name="questions_lb" HorizontalAlignment="Left" Height="275" Margin="27,105,0,0" VerticalAlignment="Top" Width="252"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="78" Margin="612,332,0,0" VerticalAlignment="Top" Width="148" Click="BtnClose_Click"/>
     </Grid>
 </Window>
