@@ -106,5 +106,13 @@ namespace Ti_poll
             ps.Show();
             Hide();
         }
+
+        private void stats_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Stats stats = new Stats();
+            stats.Owner = this;
+            stats.Show();
+            Hide();
+        }
     }
 }
