@@ -46,5 +46,17 @@ namespace Ti_poll
         {
             Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to reported this person?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Thank you for letting we know about this report to this person");
+            }
+        }
     }
 }

@@ -22,7 +22,7 @@
 
         <Image x:Name="image" Margin="202,78,211.2,219.6"/>
 
-        <Button Content="Reported" HorizontalAlignment="Left" Margin="10,0,0,9.6" Width="170" Height="79" VerticalAlignment="Bottom"/>
+        <Button Content="Reported" HorizontalAlignment="Left" Margin="10,0,0,9.6" Width="170" Height="79" VerticalAlignment="Bottom" Click="Button_Click"/>
         <Button Content="Close" Margin="0,0,10.2,9.6" Click="exit_Pressed" Height="79" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="170"/>
 
     </Grid>
