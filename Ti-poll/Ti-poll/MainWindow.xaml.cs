@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,38 +21,35 @@ namespace Ti_poll
     /// </summary>
     public partial class MainWindow : Window
     {
-        SpalshScreen splashscreen;
+        public Timer timer;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void survey_code_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key==Key.Enter)
-            {
-
-            }
-        }
-
-        private void login_button_Click(object sender, RoutedEventArgs e)
-        {
-            Home h = new Home();
-            h.Owner = this;
-            h.Show();
-            Hide();
-            
-        }
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            splashscreen = new SpalshScreen();
-            splashscreen.Owner = this;
-            splashscreen.Start();
+            timer = new Timer(10);
+            timer.Elapsed += Timer_Elapsed;
+            timer.Enabled = true;
+        }
 
-            this.Hide();
-            splashscreen.Show();
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            Dispatcher.Invoke((Action)(() =>
+            {
+                if (progress.Value < 100) progress.Value += 1;
+                else
+                {
+                    timer.Dispose();
+
+                    Start start = new Start();
+                    start.Owner = this;
+                    start.Hide();
+                    start.Show();
+                }
+            }));
         }
     }
 }

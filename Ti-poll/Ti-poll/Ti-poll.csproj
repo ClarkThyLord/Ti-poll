@@ -87,6 +87,9 @@
     <Compile Include="Clases\Profile.cs" />
     <Compile Include="Clases\Survey.cs" />
     <Compile Include="Clases\User.cs" />
+    <Compile Include="Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Stats.xaml.cs">
       <DependentUpon>Stats.xaml</DependentUpon>
     </Compile>
@@ -127,6 +130,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Profile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Start.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
