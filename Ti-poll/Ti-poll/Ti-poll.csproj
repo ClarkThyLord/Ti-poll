@@ -170,6 +170,7 @@
     <Resource Include="Images\Correct sign.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\Webpage-background-image-50-opacity.png" />
     <Resource Include="Images\Incorrect sign.png" />
     <Resource Include="Assets\Ti-poll.png" />
     <Content Include="Assets\Ti-poll.svg" />

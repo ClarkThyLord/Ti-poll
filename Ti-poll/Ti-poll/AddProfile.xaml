@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Add_Question" Height="450" Width="800" Closing="Window_Closing" Loaded="Window_Loaded">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
+        </Grid.Background>
         <TextBox x:Name="titulo_encuesta" HorizontalAlignment="Left" Height="27" Margin="285,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339"/>
         <Button Content="Add Image" HorizontalAlignment="Left" Margin="495,227,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Label Content="Question:" HorizontalAlignment="Left" Margin="216,101,0,0" VerticalAlignment="Top"/>
@@ -14,9 +17,8 @@
         <ListBox x:Name="questions_lb" HorizontalAlignment="Left" Height="301" Margin="10,83,0,0" VerticalAlignment="Top" Width="173"/>
         <Button x:Name="Add_quest" Content="Add" HorizontalAlignment="Left" Height="29" Margin="495,355,0,0" VerticalAlignment="Top" Width="158" Click="Add_quest_Click"/>
         <Button x:Name="Done_button" Content="Done" HorizontalAlignment="Left" Height="29" Margin="279,355,0,0" VerticalAlignment="Top" Width="158" Click="Done_button_Click"/>
-        <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
-            <Label Content="Add Question" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
-            <Label x:Name="name_lbl" Content="Label" HorizontalAlignment="Left" Margin="246,26,0,0" VerticalAlignment="Top" Foreground="#FFEAEAEA" FontSize="20"/>
+        <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
+            <Label Content="Add Question" Background="#FFAF0D0D" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
         </Grid>
         <Button Content="Remove Question" HorizontalAlignment="Left" Margin="188,312,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_1"/>
 
