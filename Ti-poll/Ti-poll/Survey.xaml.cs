@@ -23,5 +23,11 @@ namespace Ti_poll
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Owner.Show();
+            Close();
+        }
     }
 }

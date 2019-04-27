@@ -20,7 +20,7 @@
             <RadioButton Content="Target $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
             <RadioButton Content="Target $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
         </StackPanel>
-        <Button Content="Buy" HorizontalAlignment="Left" Height="37" Margin="207,345,0,0" VerticalAlignment="Top" Width="189"/>
+        <Button Content="Buy" HorizontalAlignment="Left" Height="37" Margin="207,345,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click_1"/>
         <Button Content="Close" HorizontalAlignment="Left" Height="37" Margin="420,345,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click"/>
 
     </Grid>
