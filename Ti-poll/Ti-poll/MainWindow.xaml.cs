@@ -20,6 +20,8 @@ namespace Ti_poll
     /// </summary>
     public partial class MainWindow : Window
     {
+        SpalshScreen splashscreen;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -40,6 +42,23 @@ namespace Ti_poll
             h.Owner = this;
             Hide();
             
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            splashscreen = new SpalshScreen();
+            splashscreen.Owner = this;
+            splashscreen.Finished += Splashscreen_Finished;
+            splashscreen.Start();
+
+            this.Hide();
+            splashscreen.Show();
+        }
+
+        private void Splashscreen_Finished(object sender, EventArgs e)
+        {
+            splashscreen.Hide();
+            this.Show();
         }
     }
 }
