@@ -96,7 +96,9 @@
 
     <Compile Include="CustomChartControl.xaml.cs">
       <DependentUpon>CustomChartControl.xaml</DependentUpon>
-    </Compile>
+
+    <Compile Include="Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
 
     <Compile Include="Start.xaml.cs">
       <DependentUpon>Start.xaml</DependentUpon>
