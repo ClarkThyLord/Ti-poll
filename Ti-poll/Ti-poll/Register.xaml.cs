@@ -16,7 +16,7 @@ using Ti_poll.Clases;
 namespace Ti_poll
 {
     /// <summary>
-    /// Interaction logic for Register.xaml
+    /// Interaction logic 1 Register.xaml
     /// </summary>
     public partial class Register : Window
     {

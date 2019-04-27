@@ -51,5 +51,9 @@ namespace Ti_poll
         {
             this.Background = Background;
         }
+
+        public User()
+        {
+        }
     }
 }
