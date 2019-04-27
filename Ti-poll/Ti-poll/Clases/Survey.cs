@@ -10,6 +10,13 @@ namespace Ti_poll.Clases
     {
         public int ID { get; }
         public bool Public = false;
-        public List<Profile> profiles = new List<Profile>(); 
+        public List<Profile> profiles = new List<Profile>();
+
+        public Survey (int ID, bool Public, List<Profile> profiles)
+        {
+            this.ID = ID;
+            this.Public = Public;
+            this.profiles = profiles;
+        }
     }
 }
