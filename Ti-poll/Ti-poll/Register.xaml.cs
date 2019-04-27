@@ -70,5 +70,14 @@ namespace Ti_poll
             home.Show();
             Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            redirect = true;
+            Start s = new Start();
+            s.Owner = Owner;
+            s.Show();
+            Close();
+        }
     }
 }

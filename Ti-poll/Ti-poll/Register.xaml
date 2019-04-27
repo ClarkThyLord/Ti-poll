@@ -50,6 +50,7 @@
         <Label Content="*" HorizontalAlignment="Left" Margin="261,264,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="Red"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="261,296,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="Red"/>
         <Button  x:Name="finish_btn" Content="Finish" HorizontalAlignment="Left" Margin="489,358,0,0" VerticalAlignment="Top" Width="75" FontFamily="Showcard Gothic" Click="finish_btn_Click" Visibility="Hidden"/>
+        <Button Content="VOLVER" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="75" FontFamily="Showcard Gothic" Click="Button_Click"/>
 
     </Grid>
 </Window>
