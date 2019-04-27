@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Height="450" Width="800" ResizeMode="NoResize" WindowStyle="None" Background="{x:Null}" Foreground="{x:Null}" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Title="Ti-poll" Icon="Assets/Ti-poll.png" Loaded="Window_Loaded">
     <Grid>
-<<<<<<< HEAD
         <Image Source="Assets/Ti-poll.png" Margin="367,10,356.6,310"/>
         <Label Content="Ti-Poll" Margin="312,0,307.6,239" FontSize="50" Height="69" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"/>
         <PasswordBox x:Name="pass_txt" Height="30" Margin="296,0,277.6,151" VerticalAlignment="Bottom"/>
@@ -20,10 +19,11 @@
             <Button x:Name="login_button" Margin="2,2,2,2.4" Padding="3" Content="Log-in" HorizontalAlignment="Center" Click="login_button_Click" RenderTransformOrigin="0.5,0.508"/>
             <Button x:Name="register__button" Margin="2" Padding="3" Content="Register" HorizontalAlignment="Center"/>
         </StackPanel>
-=======
         <Image HorizontalAlignment="Left" Height="225" VerticalAlignment="Top" Width="159" Source="Assets/Ti-poll.png" Margin="313,89,0,0"/>
         <ProgressBar x:Name="progress" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="226" Margin="280,319,0,0" Foreground="#FFFF514B" Background="#FFFFB642"/>
 
->>>>>>> 85c00bc93666c2d5584ec7d7c3abbf394c683c51
+        <Image HorizontalAlignment="Left" Height="225" VerticalAlignment="Top" Width="159" Source="Assets/Ti-poll.png" Margin="313,89,0,0"/>
+        <ProgressBar x:Name="progress" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="226" Margin="280,319,0,0" Foreground="#FFFF514B" Background="#FFFFB642"/>
+
     </Grid>
 </Window>

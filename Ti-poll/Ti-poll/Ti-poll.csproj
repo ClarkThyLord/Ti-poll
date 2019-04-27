@@ -87,13 +87,15 @@
     <Compile Include="Clases\Profile.cs" />
     <Compile Include="Clases\Survey.cs" />
     <Compile Include="Clases\User.cs" />
-<<<<<<< HEAD
+
     <Compile Include="CustomChartControl.xaml.cs">
       <DependentUpon>CustomChartControl.xaml</DependentUpon>
-=======
+
     <Compile Include="Start.xaml.cs">
       <DependentUpon>Start.xaml</DependentUpon>
->>>>>>> 85c00bc93666c2d5584ec7d7c3abbf394c683c51
+
+    <Compile Include="Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
     </Compile>
     <Compile Include="Stats.xaml.cs">
       <DependentUpon>Stats.xaml</DependentUpon>
