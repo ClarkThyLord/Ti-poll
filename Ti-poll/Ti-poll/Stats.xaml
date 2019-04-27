@@ -13,5 +13,40 @@
         <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
 
         </Grid>
+        <ProgressBar x:Name="h_pb" HorizontalAlignment="Left" Height="39" Margin="226,239,0,0" VerticalAlignment="Top" Width="227" RenderTransformOrigin="0.5,0.5" Foreground="#FF3124FF">
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.374"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <ProgressBar x:Name="m_pb" HorizontalAlignment="Left" Height="39" Margin="303,240,0,0" VerticalAlignment="Top" Width="227" RenderTransformOrigin="0.5,0.5" Foreground="#FFF732F1">
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.374"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <ProgressBar x:Name="x_pb" HorizontalAlignment="Left" Height="39" Margin="399,239,0,0" VerticalAlignment="Top" Width="227" RenderTransformOrigin="0.5,0.5" Foreground="#FFFA1111">
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.374"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <ComboBox x:Name="combo_cb" HorizontalAlignment="Left" Margin="612,105,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Gender"/>
+            <ComboBoxItem Content="Ethnicity"/>
+        </ComboBox>
+        <ListBox HorizontalAlignment="Left" Height="275" Margin="27,105,0,0" VerticalAlignment="Top" Width="252"/>
     </Grid>
 </Window>
