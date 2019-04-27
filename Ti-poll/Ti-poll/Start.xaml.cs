@@ -54,5 +54,13 @@ namespace Ti_poll
         {
             Owner.Close();
         }
+
+        private void register__button_Click(object sender, RoutedEventArgs e)
+        {
+            Register register = new Register();
+            register.Owner = this;
+            register.Show();
+            Hide();
+        }
     }
 }
