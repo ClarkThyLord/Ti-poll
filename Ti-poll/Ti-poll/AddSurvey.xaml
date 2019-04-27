@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="AddSurvey" Height="450" Width="800">
+        Title="AddSurvey" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
     <Grid>
         <TextBox x:Name="titulo_encuesta" HorizontalAlignment="Left" Height="27" Margin="214,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339"/>
         <TextBox x:Name="categoria_encuesta" HorizontalAlignment="Left" Height="27" Margin="214,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339"/>

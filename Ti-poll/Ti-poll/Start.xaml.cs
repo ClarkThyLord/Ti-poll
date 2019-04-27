@@ -24,30 +24,11 @@ namespace Ti_poll
             InitializeComponent();
         }
 
-        private void survey_code_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-            {
-                Survey s = new Survey();
-                user_txt.Text = "";
-                pass_txt.Password = "";
-                survey_code.Text = "";
-                s.Owner = this;
-                s.Show();
-                Hide();
-            }
-        }
-
-        private void login_button_Click(object sender, RoutedEventArgs e)
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             user_txt.Text = "";
             pass_txt.Password = "";
             survey_code.Text = "";
-            Home h = new Home();
-            h.Owner = this;
-            h.Show();
-            Hide();
-
         }
 
         private void Window_Closed(object sender, EventArgs e)
@@ -55,12 +36,31 @@ namespace Ti_poll
             Owner.Close();
         }
 
-        private void register__button_Click(object sender, RoutedEventArgs e)
+        private void login_Click(object sender, RoutedEventArgs e)
+        {
+            Home h = new Home();
+            h.Owner = this;
+            h.Show();
+            Hide();
+        }
+
+        private void register_Click(object sender, RoutedEventArgs e)
         {
             Register register = new Register();
             register.Owner = this;
             register.Show();
             Hide();
+        }
+
+        private void survey_code_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Survey s = new Survey();
+                s.Owner = this;
+                s.Show();
+                Hide();
+            }
         }
     }
 }
