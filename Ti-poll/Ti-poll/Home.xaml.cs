@@ -57,6 +57,15 @@ namespace Ti_poll
 
         private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
+            foreach (int i in Database.CurrentUser.Surveys)
+            {
+                Clases.Survey s = Database.data.GetSurvey(i);
+                Label l = new Label();
+                l.Content = s.Name + " " + s.Category + " " + s.Views;
+                l.Tag = i;
+                panel.Children.Add(l);
+                l.MouseDown += L_MouseDown;
+            }
             profile_button.Content = Database.CurrentUser.Name;
         }
 
@@ -68,18 +77,7 @@ namespace Ti_poll
             Hide();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            //foreach (int i in Database.CurrentUser.Surveys)
-            //{
-            //    Clases.Survey s = Database.data.GetSurvey(i);
-            //    Label l = new Label();
-            //    l.Content = s.Name + " " + s.Category + " " + s.Views;
-            //    l.Tag = i;
-            //    panel.Children.Add(l);
-            //    l.MouseDown += L_MouseDown;
-            //}
-        }
+        
 
         private void L_MouseDown(object sender, MouseButtonEventArgs e)
         {
