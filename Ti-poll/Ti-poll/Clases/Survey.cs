@@ -14,8 +14,14 @@ namespace Ti_poll.Clases
         public string Name = "";
         public string Category = "";
         public bool Public = false;
-        public int Views = 0;
+        public int ViewsH = 0;
+        public int ViewsM = 0;
         public List<int> profiles = new List<int>();
+
+        public Survey()
+        {
+        }
+
 
         // TO CREATE
         public Survey(bool Public)
