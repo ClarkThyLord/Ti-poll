@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Home" Height="450" Width="800" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png" IsVisibleChanged="Window_IsVisibleChanged">
+        Title="Home" Height="450" Width="800" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png" IsVisibleChanged="Window_IsVisibleChanged" Loaded="Window_Loaded">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
-        <StackPanel Name="panel" Height="333" Margin="10,78,10.333,0" VerticalAlignment="Top" Background="White">
-            <Label Content="Add" HorizontalAlignment="Center" VerticalAlignment="Top" MouseDown="Label_MouseDown"/>
-            <Button x:Name="stats_btn" Content="Button" Margin="0,0,-0.4,0" Click="stats_btn_Click"/>
-        </StackPanel>
+
         <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
-            <TextBox x:Name="searchbar" HorizontalAlignment="Right" Margin="0,30,27,17" TextWrapping="Wrap" Width="211" KeyDown="searchbar_KeyDown"/>
-            <ComboBox HorizontalAlignment="Right" Margin="0,35,255.267,17" Width="120" BorderBrush="White" SelectedIndex="0">
+            <Button x:Name="profile_button" Content="Profile" Background="#FFAF0D0D" BorderBrush="{x:Null}" Foreground="White" FontSize="24" HorizontalAlignment="Left" Width="117" Height="73" VerticalAlignment="Top" Click="profile_Click" FontFamily="Showcard Gothic"/>
+            <Button x:Name="points_button" Content="Giftcards" Margin="122,0,0,0" Background="#FFAF0D0D" BorderBrush="{x:Null}" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="119" Height="73" VerticalAlignment="Top" Click="store_Click" FontFamily="Showcard Gothic"/>
+            <Button x:Name="pointsMoney_button" Content="Points Store" Background="#FFAF0D0D" BorderBrush="{x:Null}" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="185" Height="73" VerticalAlignment="Top" FontFamily="Showcard Gothic" Margin="246,0,0,0" Click="PointMoney_Click"/>
+            <TextBox x:Name="searchbar" HorizontalAlignment="Right" Margin="0,23,17.267,24" TextWrapping="Wrap" Width="211" KeyDown="searchbar_KeyDown"/>
+            <ComboBox HorizontalAlignment="Right" Margin="0,22,227.267,24" Width="118" BorderBrush="White" SelectedIndex="0">
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -28,8 +28,18 @@
                 <ComboBoxItem Content="Code"/>
             </ComboBox>
         </Grid>
-        <Button x:Name="profile_button" Content="Profile" Background="#FFAF0D0D" BorderBrush="{x:Null}" Foreground="White" FontSize="24" HorizontalAlignment="Left" Width="117" Height="73" VerticalAlignment="Top" Click="profile_button_Click" FontFamily="Showcard Gothic"/>
-        <Button x:Name="points_button" Content="Giftcards" Margin="225,0,0,0" Background="#FFAF0D0D" BorderBrush="{x:Null}" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="148" Height="73" VerticalAlignment="Top" Click="points_button_Click" FontFamily="Showcard Gothic"/>
-        <Button x:Name="pointsMoney_button" Content="Points Store" Background="#FFAF0D0D" BorderBrush="{x:Null}" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="185" Height="73" VerticalAlignment="Top" FontFamily="Showcard Gothic" Margin="400,0,0,0" Click="PointsMoney_button_Click"/>
+
+        <!--<ListBox x:Name="SurveyList" BorderThickness="0" ItemsSource="{Binding}" Margin="10,78,9.6,65" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>-->
+
+        <StackPanel Orientation="Horizontal" Name="panel" Height="50" Margin="10,360,10.6,0" VerticalAlignment="Top" Background="White" HorizontalAlignment="Center">
+            <Button Margin="10" Content="Add" VerticalAlignment="Top" HorizontalAlignment="Center" Click="AddSurvey"/>
+            <!--<Button Margin="10" x:Name="stats_btn" Content="Button" Click="Stats_Click" HorizontalAlignment="Center"/>-->
+        </StackPanel>
     </Grid>
 </Window>

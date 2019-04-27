@@ -23,7 +23,32 @@ namespace Ti_poll
         public Home()
         {
             InitializeComponent();
-            
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                //Console.WriteLine(Database.CurrentUser.Surveys.Count);
+                //List<Clases.Survey> surveys = new List<Clases.Survey>();
+
+                //foreach (int id in Database.CurrentUser.Surveys)
+                //{
+                //    surveys.Add(Database.data.GetSurvey(id));
+                //} 
+
+                //SurveyList.ItemsSource = surveys;
+                //SurveyList.Items.Refresh();
+            }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Owner.Show();
         }
 
         private void searchbar_KeyDown(object sender, KeyEventArgs e)
@@ -34,83 +59,44 @@ namespace Ti_poll
             }
         }
 
-        private void profile_button_Click(object sender, RoutedEventArgs e)
+        private void profile_Click(object sender, RoutedEventArgs e)
         {
             Perfil p = new Perfil();
-            p.Show();
             p.Owner = this;
             Hide();
+            p.Show();
         }
 
-        private void points_button_Click(object sender, RoutedEventArgs e)
+        private void store_Click(object sender, RoutedEventArgs e)
         {
             Store s = new Store();
             s.Owner = this;
+            Hide();
             s.Show();
-            Hide();
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void PointMoney_Click(object sender, RoutedEventArgs e)
         {
-            Owner.Show();
-        }
-
-        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-            foreach (int i in Database.CurrentUser.Surveys)
-            {
-                Clases.Survey s = Database.data.GetSurvey(i);
-                Label l = new Label();
-                l.Content = s.Name + " " + s.Category + " " + s.Views;
-                l.Tag = i;
-                panel.Children.Add(l);
-                l.MouseDown += L_MouseDown;
-            }
-            profile_button.Content = Database.CurrentUser.Name;
-        }
-
-        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            AddSurvey a = new AddSurvey();
-            a.Owner = this;
-            a.Show();
-            Hide();
-        }
-
-        
-
-        private void L_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Clases.Survey s;
-            Label l = sender as Label;
-            int i = (int)l.Tag;
-            for (int j = 0; j < Database.CurrentUser.Surveys.Count; j++)
-            {
-                if (j==i)
-                {
-                    s = Database.data.GetSurvey(j);
-                    EditSurvey es = new EditSurvey(s);
-                    es.Owner = this;
-                    es.Show();
-                    Hide();
-                }
-            }
-        }
-
-        private void PointsMoney_button_Click(object sender, RoutedEventArgs e)
-        {
-            Points_Store ps = new Points_Store();
+            PointStore ps = new PointStore();
             ps.Owner = this;
-            ps.Show();
             Hide();
+            ps.Show();
         }
 
-        private void stats_btn_Click(object sender, RoutedEventArgs e)
+        private void Stats_Click(object sender, RoutedEventArgs e)
         {
             Stats stats = new Stats();
             stats.Owner = this;
-            stats.Show();
             Hide();
+            stats.Show();
+        }
+
+        private void AddSurvey(object sender, RoutedEventArgs e)
+        {
+            AddSurvey addSurvey = new AddSurvey();
+            addSurvey.Owner = this;
+            Hide();
+            addSurvey.Show();
         }
     }
 }

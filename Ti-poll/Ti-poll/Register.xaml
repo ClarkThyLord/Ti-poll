@@ -35,14 +35,17 @@
             <TextBox HorizontalAlignment="Left" Height="23" Margin="102,128,0,0" TextWrapping="Wrap" Text="" x:Name="income1" VerticalAlignment="Top" Width="120"/>
 
             <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="102,11,0,0" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="Seleccione uno" IsEnabled="False" IsSelected="True"/>
                 <ComboBoxItem Content="Male"/>
                 <ComboBoxItem Content="Female"/>
             </ComboBox>
             <ComboBox x:Name="relationship1" HorizontalAlignment="Left" Margin="102,41,0,0" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="Seleccione uno" IsEnabled="False" IsSelected="True"/>
                 <ComboBoxItem Content="Married"/>
                 <ComboBoxItem Content="Single"/>
             </ComboBox>
             <ComboBox x:Name="ethnicity1" HorizontalAlignment="Left" Margin="102,101,0,0" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="Seleccione uno" IsEnabled="False" IsSelected="True"/>
                 <ComboBoxItem Content="African"/>
                 <ComboBoxItem Content="Asian"/>
                 <ComboBoxItem Content="Hispanic"/>

@@ -72,8 +72,8 @@
     <Compile Include="EditSurvey.xaml.cs">
       <DependentUpon>EditSurvey.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Points Store.xaml.cs">
-      <DependentUpon>Points Store.xaml</DependentUpon>
+    <Compile Include="PointsStore.xaml.cs">
+      <DependentUpon>PointsStore.xaml</DependentUpon>
     </Compile>
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
@@ -121,7 +121,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Points Store.xaml">
+    <Page Include="PointsStore.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
