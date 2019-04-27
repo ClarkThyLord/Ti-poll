@@ -30,7 +30,7 @@ namespace Ti_poll
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            timer = new Timer(10);
+            timer = new Timer(1);
             timer.Elapsed += Timer_Elapsed;
             timer.Enabled = true;
         }
@@ -46,7 +46,7 @@ namespace Ti_poll
 
                     Start start = new Start();
                     start.Owner = this;
-                    start.Hide();
+                    Hide();
                     start.Show();
                 }
             }));

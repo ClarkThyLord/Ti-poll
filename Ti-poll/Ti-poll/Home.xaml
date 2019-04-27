@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Home" Height="450" Width="800" Closing="Window_Closing">
+        Title="Home" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel Height="201" Margin="138,105,141.333,0" VerticalAlignment="Top" Background="White"/>
         <Button x:Name="Add_Survey" Content="+" Margin="361,311,359.333,0" FontSize="48" Height="62" VerticalAlignment="Top" Click="Add_Survey_Click"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Survey" Height="539.197" Width="809.643" Closing="Window_Closing">
+        Title="Survey" Height="539.197" Width="809.643" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
             <Label Content="Survey" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="152" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24"/>

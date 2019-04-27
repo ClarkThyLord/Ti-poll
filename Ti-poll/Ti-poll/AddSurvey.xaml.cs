@@ -26,7 +26,7 @@ namespace Ti_poll
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Add_Question aq = new Add_Question();
+            AddQuestion aq = new AddQuestion();
             aq.Owner = this;
             aq.Show();
             Hide();

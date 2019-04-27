@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Perfil" Height="529.679" Width="793" Closing="Window_Closing">
+        Title="Perfil" Height="529.679" Width="793" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
     <Grid Background="White">
         <Grid HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="793" Background="#FF173299">
             <Label Content="Profile" HorizontalAlignment="Left" Height="53" Margin="29,10,0,0" VerticalAlignment="Top" Width="91" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24"/>

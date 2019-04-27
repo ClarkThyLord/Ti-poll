@@ -18,9 +18,9 @@ namespace Ti_poll
     /// <summary>
     /// Interaction logic for Add_Question.xaml
     /// </summary>
-    public partial class Add_Question : Window
+    public partial class AddQuestion : Window
     {
-        public Add_Question()
+        public AddQuestion()
         {
             InitializeComponent();
         }
