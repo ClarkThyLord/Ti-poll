@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
         Title="Points_Store" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="0,0,3.6,0" HorizontalAlignment="Right" Width="790">
         <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
             <Label Content="Points Store" Background="#FFAF0D12" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
             <Label Content="Points:" Background="{x:Null}" BorderBrush="#FFAF0D10" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="523,10,0,0" VerticalAlignment="Top" Width="236"/>
         </Grid>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="163,0,144.6,155" Width="486" Height="136" VerticalAlignment="Bottom">
+        <StackPanel Orientation="Horizontal" Margin="163,78,0,155" HorizontalAlignment="Left" Width="468">
             <Image x:Name="imagebtn_100" Source="Assets/100 points.png" Height="100" Width="100"  Margin="10" HorizontalAlignment="Center" MouseDown="Imagebtn_100_MouseDown"/>
             <Image x:Name="imagebtn_250" Source="Assets/250 points.png" Height="100" Width="100"  Margin="10" HorizontalAlignment="Center" MouseDown="Imagebtn_250_MouseDown"/>
             <Image x:Name="imagebtn_500" Source="Assets/500 points.png" Height="100" Width="100"  Margin="10" HorizontalAlignment="Center" MouseDown="Imagebtn_500_MouseDown"/>
@@ -22,6 +22,6 @@
         <Label Content="$5 dlls" HorizontalAlignment="Left" Height="42" Margin="301,265,0,0" VerticalAlignment="Top" Width="82" FontSize="24"/>
         <Label Content="$15 dlls" HorizontalAlignment="Left" Height="42" Margin="414,265,0,0" VerticalAlignment="Top" Width="97" FontSize="24"/>
         <Label Content="$25 dlls" HorizontalAlignment="Left" Height="42" Margin="533,265,0,0" VerticalAlignment="Top" Width="98" FontSize="24"/>
-        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="37" Margin="10,373,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click"/>
+        <Button x:Name="btnClose" Content="Close" Height="37" Margin="0,373,10,0" VerticalAlignment="Top" Click="Button_Click" HorizontalAlignment="Right" Width="770"/>
     </Grid>
 </Window>
