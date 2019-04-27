@@ -48,5 +48,29 @@ namespace Ti_poll
             Owner.Owner.Show();
             Owner.Close();
         }
+
+        private void Add_quest_Click(object sender, RoutedEventArgs e)
+        {
+            int num = titulo_encuesta.Text.Length;
+            if (titulo_encuesta.Text.Length>0)
+            {
+                if (titulo_encuesta.Text[num - 1] != '?')
+                {
+                    titulo_encuesta.Text += '?';
+                }
+                questions_lb.Items.Add(titulo_encuesta.Text);
+            }
+            
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            questions_lb.Items.Remove(questions_lb.SelectedItem);
+        }
     }
 }
