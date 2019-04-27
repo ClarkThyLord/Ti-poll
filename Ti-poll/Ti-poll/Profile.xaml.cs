@@ -26,14 +26,16 @@ namespace Ti_poll
 
         private void BttnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            Perfil popup = new Perfil();
             string messsage = "Save successfully";
-            popup.ShowDialog(messsage);
+            MessageBox.Show(messsage);
         }
 
-        private void ShowDialog(string messsage)
+        private void BttnSalir_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            Home h = new Home();
+            h.Show();
+            h.Owner = this;
+            Hide();
         }
     }
 }
