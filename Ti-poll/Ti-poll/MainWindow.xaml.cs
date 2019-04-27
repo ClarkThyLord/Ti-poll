@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Ti_poll.Clases;
 
 namespace Ti_poll
 {
@@ -25,6 +26,7 @@ namespace Ti_poll
 
         public MainWindow()
         {
+            Database.data.save();
             InitializeComponent();
         }
 
