@@ -1,0 +1,27 @@
+﻿<Window x:Class="Ti_poll.Perfil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ti_poll"
+        mc:Ignorable="d"
+        Title="Perfil" Height="529.679" Width="793">
+    <Grid Background="White">
+        <Grid HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="793" Background="#FF173299">
+            <Label Content="Profile" HorizontalAlignment="Left" Height="53" Margin="29,10,0,0" VerticalAlignment="Top" Width="91" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24"/>
+
+        </Grid>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="29" Margin="48,78,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtBOX_Name" HorizontalAlignment="Left" Height="42" Margin="48,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Height="29" Margin="48,154,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtBOX_Age" HorizontalAlignment="Left" Height="42" Margin="48,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Country:" HorizontalAlignment="Left" Height="29" Margin="48,230,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtBOX_Country" HorizontalAlignment="Left" Height="42" Margin="48,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Points:" HorizontalAlignment="Left" Height="29" Margin="48,306,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtBOX_Points" HorizontalAlignment="Left" Height="42" Margin="48,335,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Image x:Name="image_Perfil" HorizontalAlignment="Left" Height="270" Margin="349,107,0,0" VerticalAlignment="Top" Width="386"/>
+        <Button x:Name="bttnGuardar" Content="Save" HorizontalAlignment="Left" Height="74" Margin="48,416,0,0" VerticalAlignment="Top" Width="146" Click="BttnGuardar_Click"/>
+        <Button x:Name="bttnSalir" Content="Close" HorizontalAlignment="Left" Height="74" Margin="221,416,0,0" VerticalAlignment="Top" Width="147" Click="BttnSalir_Click"/>
+
+    </Grid>
+</Window>

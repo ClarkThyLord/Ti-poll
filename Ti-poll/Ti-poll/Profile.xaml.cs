@@ -23,5 +23,19 @@ namespace Ti_poll
         {
             InitializeComponent();
         }
+
+        private void BttnGuardar_Click(object sender, RoutedEventArgs e)
+        {
+            string messsage = "Save successfully";
+            MessageBox.Show(messsage);
+        }
+
+        private void BttnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            Home h = new Home();
+            h.Show();
+            h.Owner = this;
+            Hide();
+        }
     }
 }

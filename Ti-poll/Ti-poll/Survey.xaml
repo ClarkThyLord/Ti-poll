@@ -20,8 +20,8 @@
                 <Image Source="Images/Correct sign.png" Width="195" Height="60"></Image>
             </StackPanel>
         </Button>
-        <Button Content="Reportar" HorizontalAlignment="Left" Height="79" Margin="10,421,0,0" VerticalAlignment="Top" Width="170"/>
-        <Button Content="Salir" HorizontalAlignment="Left" Height="79" Margin="623,421,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button Content="Reported" HorizontalAlignment="Left" Height="79" Margin="10,421,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button Content="Close" HorizontalAlignment="Left" Height="79" Margin="623,421,0,0" VerticalAlignment="Top" Width="170"/>
 
     </Grid>
 </Window>
