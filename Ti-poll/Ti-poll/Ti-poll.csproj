@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Add Question.xaml.cs">
+      <DependentUpon>Add Question.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddSurvey.xaml.cs">
+      <DependentUpon>AddSurvey.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Client.cs" />
     <Compile Include="Clases\Product.cs" />
     <Compile Include="Clases\Profile.cs" />
@@ -63,6 +69,14 @@
     <Compile Include="Survey.xaml.cs">
       <DependentUpon>Survey.xaml</DependentUpon>
     </Compile>
+    <Page Include="Add Question.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddSurvey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
