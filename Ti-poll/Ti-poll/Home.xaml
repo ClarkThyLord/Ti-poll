@@ -8,7 +8,7 @@
         Title="Home" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
+            <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
         <StackPanel Height="201" Margin="79,116,199.6,0" VerticalAlignment="Top" Background="White"/>
         <Button x:Name="Add_Survey" Content="+" Margin="635,273,31.6,0" FontSize="48" Height="121" VerticalAlignment="Top" Click="Add_Survey_Click" FontFamily="Showcard Gothic"/>

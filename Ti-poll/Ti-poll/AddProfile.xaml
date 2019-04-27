@@ -8,7 +8,7 @@
         Title="Add_Question" Height="450" Width="800" Closing="Window_Closing" Loaded="Window_Loaded">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
+            <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
         <TextBox x:Name="titulo_encuesta" HorizontalAlignment="Left" Height="27" Margin="285,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339"/>
         <Button Content="Add Image" HorizontalAlignment="Left" Margin="495,227,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>

@@ -8,7 +8,7 @@
         Title="Register" Height="450" Width="800" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
+            <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
         <Image Source="Assets/Ti-poll.png" Margin="367,10,356.6,310"/>
         <Label Content="Ti-poll" Margin="312,0,307.6,239" FontSize="50" Height="69" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" FontFamily="Showcard Gothic"/>

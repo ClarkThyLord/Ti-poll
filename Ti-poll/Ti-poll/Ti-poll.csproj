@@ -167,12 +167,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Correct sign.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Webpage-background-image-50-opacity.png" />
-    <Resource Include="Images\Incorrect sign.png" />
+    <Resource Include="Assets\Background.png" />
     <Resource Include="Assets\Ti-poll.png" />
+    <Resource Include="Assets\Cross.png" />
+    <Resource Include="Assets\Ok.png" />
     <Content Include="Assets\Ti-poll.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

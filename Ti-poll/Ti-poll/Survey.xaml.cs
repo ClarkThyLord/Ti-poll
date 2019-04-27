@@ -24,14 +24,24 @@ namespace Ti_poll
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
-
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Owner.Show();
+        }
+
+        private void ok_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Console.WriteLine("ok!");
+        }
+
+        private void cross_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Console.WriteLine("cross!");
+        }
+
+        private void exit_Pressed(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -8,7 +8,7 @@
         Title="Stats" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
+            <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
         <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
 

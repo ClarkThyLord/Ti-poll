@@ -8,7 +8,7 @@
         Title="Store" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
+            <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
         <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
             <Label Content="Store" Background="#FFAF0D12" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>

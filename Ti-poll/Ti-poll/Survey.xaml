@@ -8,25 +8,22 @@
         Title="Survey" Height="539.197" Width="809.643" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
+            <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
         <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
-            <Label Content="Survey" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="152" Background="#FFAF0D0D" Foreground="White" FontSize="24"/>
+            <Label x:Name="SurveyName" Content="Survey" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="194" Background="#FFAF0D0D" Foreground="White" FontSize="24"/>
+            <TextBlock x:Name="txtBOX_Pregunta" HorizontalAlignment="Left" Height="50" Margin="204,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380" Background="{x:Null}"/>
         </Grid>
-        <TextBox x:Name="txtBOX_Pregunta" HorizontalAlignment="Left" Height="50" Margin="199,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="390"/>
-        <Image HorizontalAlignment="Left" Height="212" Margin="196,115,0,0" VerticalAlignment="Top" Width="390"/>
-        <Button HorizontalAlignment="Left" Height="60" Margin="196,327,0,0" VerticalAlignment="Top">
-            <StackPanel>
-                <Image Source="Images/Incorrect sign.png" Width="195" Height="60"></Image>
-            </StackPanel>
-        </Button>
-        <Button HorizontalAlignment="Left" Height="60" Margin="391,327,0,0" VerticalAlignment="Top">
-            <StackPanel>
-                <Image Source="Images/Correct sign.png" Width="195" Height="60"></Image>
-            </StackPanel>
-        </Button>
-        <Button Content="Reported" HorizontalAlignment="Left" Height="79" Margin="10,421,0,0" VerticalAlignment="Top" Width="170"/>
-        <Button Content="Close" HorizontalAlignment="Left" Height="79" Margin="623,421,0,0" VerticalAlignment="Top" Width="170" Click="Button_Click"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="282,0,281.2,93.6" Width="Auto" Height="136" VerticalAlignment="Bottom">
+            <Image Source="Assets/Ok.png" Height="100" Width="100"  Margin="10" MouseDown="ok_MouseDown" HorizontalAlignment="Center"/>
+            <Image Source="Assets/Cross.png" Height="100" Width="100"  Margin="10" MouseDown="cross_MouseDown" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <Image x:Name="image" Margin="196,115,217.2,182.6"/>
+
+        <Button Content="Reported" HorizontalAlignment="Left" Margin="10,0,0,9.6" Width="170" Height="79" VerticalAlignment="Bottom"/>
+        <Button Content="Close" Margin="0,0,10.2,9.6" Click="exit_Pressed" Height="79" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="170"/>
 
     </Grid>
 </Window>
