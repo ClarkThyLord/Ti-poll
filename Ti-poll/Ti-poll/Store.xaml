@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="Store" Height="450" Width="800">
     <Grid>
-        
+        <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
+            <Label Content="Store" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
+            <Label Content="Points:" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="523,10,0,0" VerticalAlignment="Top" Width="236"/>
+        </Grid>
+        <StackPanel HorizontalAlignment="Left" Height="202" Margin="241,109,0,0" VerticalAlignment="Top" Width="507">
+            <RadioButton Content="Starbucks $15 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton Content="Starbucks $30 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton Content="Starbucks $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton Content="Best Buy $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton Content="Best Buy $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton Content="Target $15 Gift Card" Height="28" Margin="0,0,0.333,0" FontSize="24"/>
+            <RadioButton Content="Target $50 Gift Card" Height="29" Margin="0,0,0.333,0" FontSize="24"/>
+        </StackPanel>
+        <Button Content="Buy" HorizontalAlignment="Left" Height="37" Margin="306,341,0,0" VerticalAlignment="Top" Width="189"/>
+
     </Grid>
 </Window>
