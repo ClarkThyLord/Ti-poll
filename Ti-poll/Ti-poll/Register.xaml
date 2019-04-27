@@ -39,7 +39,7 @@
             <ComboBoxItem Content="Other"/>
         </ComboBox>
 
-        <Button Content="Register" HorizontalAlignment="Left" Margin="155,343,0,0" VerticalAlignment="Top" Width="75" Click="register_Click" FontFamily="Showcard Gothic"/>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="155,343,0,0" VerticalAlignment="Top" Width="75" Click="registered_Click" FontFamily="Showcard Gothic"/>
         <Label x:Name="gender1" Content="Gender:" HorizontalAlignment="Left" Margin="399,197,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Hidden"/>
         <Label x:Name="relationship" Content="Relationship:" HorizontalAlignment="Left" Margin="367,231,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Hidden"/>
         <Label x:Name="country" Content="Country:" HorizontalAlignment="Left" Margin="393,256,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Hidden"/>
@@ -49,8 +49,8 @@
         <Label Content="*" HorizontalAlignment="Left" Margin="261,227,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="Red"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="261,264,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="Red"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="261,296,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="Red"/>
-        <Button  x:Name="finish_btn" Content="Finish" HorizontalAlignment="Left" Margin="489,377,0,0" VerticalAlignment="Top" Width="75" FontFamily="Showcard Gothic" Click="finish_btn_Click"/>
-        <Button Content="VOLVER" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="75" FontFamily="Showcard Gothic" Click="Button_Click"/>
+        <Button  x:Name="finish_btn" Content="Finish" HorizontalAlignment="Left" Margin="489,377,0,0" VerticalAlignment="Top" Width="75" FontFamily="Showcard Gothic" Click="finished_Click"/>
+        <Button Content="VOLVER" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="75" FontFamily="Showcard Gothic" Click="cancel_Click"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="463,345,0,0" TextWrapping="Wrap" Text="" x:Name="sex_txt" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
         <Label x:Name="sex_lbl" Content="Sexuality:" HorizontalAlignment="Left" Margin="385,345,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Visibility="Hidden"/>
 

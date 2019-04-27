@@ -25,6 +25,11 @@ namespace Ti_poll
             InitializeComponent();
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            user_txt.Focus();
+        }
+
         private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             user_txt.Text = "";
@@ -37,10 +42,35 @@ namespace Ti_poll
             Owner.Close();
         }
 
+        private void user_txt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (user_txt.Text.Length > 0 && e.Key == Key.Enter)
+            {
+                pass_txt.Focus();
+            }
+        }
+
+        private void pass_txt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (user_txt.Text.Length > 0 && e.Key == Key.Enter)
+            {
+                attempt_login();
+            }
+        }
+
         private void login_Click(object sender, RoutedEventArgs e)
         {
+            attempt_login();
+        }
+
+        private void attempt_login()
+        {
             User user = Database.data.attempt_login(user_txt.Text, pass_txt.Password);
-            if (user == null) return;
+            if (user == null) {
+                user_txt.Focus();
+                user_txt.SelectAll();
+                return;
+            }
 
             Database.data.login(user);
 
@@ -62,6 +92,14 @@ namespace Ti_poll
         {
             if (e.Key == Key.Enter)
             {
+                if (!int.TryParse(survey_code.Text, out int id))
+                {
+                    survey_code.SelectAll();
+                    return;
+                }
+
+                Database.data.GetProfile(id);
+
                 Survey s = new Survey();
                 s.Owner = this;
                 s.Show();
