@@ -36,7 +36,7 @@ namespace Ti_poll
             }
         }
 
-        private void register_Click(object sender, RoutedEventArgs e)
+        private void registered_Click(object sender, RoutedEventArgs e)
         {
             gender.Visibility = Visibility.Visible;
             gender1.Visibility = Visibility.Visible;
@@ -53,7 +53,7 @@ namespace Ti_poll
             sex_txt.Visibility = Visibility.Visible;
         }
 
-        private void finish_btn_Click(object sender, RoutedEventArgs e)
+        private void finished_Click(object sender, RoutedEventArgs e)
         {
             if (name.Text.Length == 0) return;
             if (username.Text.Length == 0) return;
@@ -83,12 +83,8 @@ namespace Ti_poll
             Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void cancel_Click(object sender, RoutedEventArgs e)
         {
-            redirect = true;
-            Start s = new Start();
-            s.Owner = Owner;
-            s.Show();
             Close();
         }
     }

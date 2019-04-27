@@ -111,5 +111,15 @@ namespace Ti_poll.Clases
         {
             CurrentUser = null;
         }
+
+        public Survey GetSurvey(int id)
+        {
+            return Surveys.Find(survey => survey.ID == id);
+        }
+
+        public Profile GetProfile(int id)
+        {
+            return Profiles.Find(profile => profile.ID == id);
+        }
     }
 }

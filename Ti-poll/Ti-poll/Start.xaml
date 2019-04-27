@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Ti-poll" Height="450" MinHeight="450" Width="800" MinWidth="800" Icon="Assets/Ti-poll.png" WindowStartupLocation="CenterScreen" Closed="Window_Closed" IsVisibleChanged="Window_IsVisibleChanged">
+        Title="Ti-poll" Height="450" MinHeight="450" Width="800" MinWidth="800" Icon="Assets/Ti-poll.png" WindowStartupLocation="CenterScreen" Closed="Window_Closed" IsVisibleChanged="Window_IsVisibleChanged" Loaded="Window_Loaded">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Background.png"/>
@@ -13,14 +13,14 @@
         <Image Source="Assets/Ti-poll.png" Margin="367,10,356.6,310"/>
         <Label Content="Ti-poll" Margin="312,0,307.6,239" FontSize="50" Height="69" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" FontFamily="Showcard Gothic"/>
         <Label Content="Username:" VerticalAlignment="Bottom" Margin="203,0,511.6,206" FontFamily="Showcard Gothic"/>
-        <TextBox x:Name="user_txt" Height="30" Margin="295,0,278.6,204" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="user_txt" Height="30" Margin="295,0,278.6,204" TextWrapping="Wrap" VerticalAlignment="Bottom" KeyDown="user_txt_KeyDown"/>
         <Label Content="Password:" VerticalAlignment="Bottom" Margin="203,0,516.6,153" FontFamily="Showcard Gothic"/>
-        <PasswordBox x:Name="pass_txt" Height="30" Margin="296,0,277.6,151" VerticalAlignment="Bottom"/>
-        <Label Content="Survey Code:" VerticalAlignment="Bottom" Margin="185,0,503.6,61" FontFamily="Showcard Gothic"/>
-        <TextBox x:Name="survey_code" Margin="295,0,278.6,57" TextWrapping="Wrap" KeyDown="survey_code_KeyDown" Height="30" VerticalAlignment="Bottom"/>
+        <PasswordBox x:Name="pass_txt" Height="30" Margin="296,0,277.6,151" VerticalAlignment="Bottom" KeyDown="pass_txt_KeyDown"/>
         <StackPanel Orientation="Horizontal" Margin="348,0,330.6,104" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Center">
             <Button x:Name="login_button" Margin="2,0,2,2" Padding="3" Content="Log-in" HorizontalAlignment="Center" Height="26" VerticalAlignment="Bottom" Click="login_Click" FontFamily="Showcard Gothic"/>
             <Button x:Name="register__button" Margin="2,2,2,2.4" Padding="3" Content="Register" HorizontalAlignment="Center" Click="register_Click" FontFamily="Showcard Gothic"/>
         </StackPanel>
+        <Label Content="Survey Code:" VerticalAlignment="Bottom" Margin="185,0,503.6,61" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="survey_code" Margin="295,0,278.6,57" TextWrapping="Wrap" KeyDown="survey_code_KeyDown" Height="30" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
