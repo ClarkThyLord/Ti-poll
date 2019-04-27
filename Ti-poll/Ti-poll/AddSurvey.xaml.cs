@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace Ti_poll
 {
     /// <summary>
-    /// Interaction logic for Perfil.xaml
+    /// Interaction logic for AddSurvey.xaml
     /// </summary>
-    public partial class Perfil : Window
+    public partial class AddSurvey : Window
     {
-        public Perfil()
+        public AddSurvey()
         {
             InitializeComponent();
-        }
-
-        private void BttnGuardar_Click(object sender, RoutedEventArgs e)
-        {
-            Perfil popup = new Perfil();
-            string messsage = "Save successfully";
-            popup.ShowDialog(messsage);
-        }
-
-        private void ShowDialog(string messsage)
-        {
-            throw new NotImplementedException();
         }
     }
 }
