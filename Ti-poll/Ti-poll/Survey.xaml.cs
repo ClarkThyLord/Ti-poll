@@ -26,8 +26,12 @@ namespace Ti_poll
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Owner.Show();
             Close();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Owner.Show();
         }
     }
 }

@@ -42,5 +42,11 @@ namespace Ti_poll
             Owner.Close();
             Close();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Owner.Owner.Show();
+            Owner.Close();
+        }
     }
 }
