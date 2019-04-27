@@ -49,5 +49,13 @@ namespace Ti_poll
         {
 
         }
+
+        private void Add_Survey_Click(object sender, RoutedEventArgs e)
+        {
+            AddSurvey a = new AddSurvey();
+            a.Owner = this;
+            a.Show();
+            Hide();
+        }
     }
 }

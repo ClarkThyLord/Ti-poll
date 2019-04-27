@@ -14,7 +14,7 @@
         <Image x:Name="pic" HorizontalAlignment="Left" Height="109" Margin="281,187,0,0" VerticalAlignment="Top" Width="156"/>
         <ListBox HorizontalAlignment="Left" Height="301" Margin="10,83,0,0" VerticalAlignment="Top" Width="173"/>
         <Button x:Name="Add_quest" Content="Add" HorizontalAlignment="Left" Height="29" Margin="495,355,0,0" VerticalAlignment="Top" Width="158"/>
-        <Button x:Name="Done_button" Content="Done" HorizontalAlignment="Left" Height="29" Margin="279,355,0,0" VerticalAlignment="Top" Width="158"/>
+        <Button x:Name="Done_button" Content="Done" HorizontalAlignment="Left" Height="29" Margin="279,355,0,0" VerticalAlignment="Top" Width="158" Click="Done_button_Click"/>
 
     </Grid>
 </Window>

@@ -8,7 +8,7 @@
         Title="Home" Height="450" Width="800">
     <Grid>
         <StackPanel Height="201" Margin="138,105,141.333,0" VerticalAlignment="Top" Background="White"/>
-        <Button x:Name="Add_Survey" Content="+" Margin="361,311,359.333,0" FontSize="48" Height="62" VerticalAlignment="Top"/>
+        <Button x:Name="Add_Survey" Content="+" Margin="361,311,359.333,0" FontSize="48" Height="62" VerticalAlignment="Top" Click="Add_Survey_Click"/>
         <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
             <TextBox x:Name="searchbar" HorizontalAlignment="Right" Margin="0,30,27,17" TextWrapping="Wrap" Width="211" KeyDown="searchbar_KeyDown"/>
             <ComboBox HorizontalAlignment="Right" Margin="0,31,279,21" Width="120" BorderBrush="White" SelectedIndex="0">
@@ -25,7 +25,6 @@
         </Grid>
         <Button x:Name="profile_button" Content="Profile" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="profile_button_Click"/>
         <Button x:Name="points_button" Content="Points:" Margin="90,0,0,0" Background="#FF173299" BorderBrush="#FF173299" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="points_button_Click"/>
-        <Button x:Name="store_button" Content="Store" Margin="241,0,0,0" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" Height="73" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Click="store_button_Click"/>
 
     </Grid>
 </Window>
