@@ -38,7 +38,9 @@ namespace Ti_poll
 
         private void Done_button_Click(object sender, RoutedEventArgs e)
         {
-
+            Home H = new Home();
+            Button a = new Button();
+            H.panel.Children.Add(a);
             Owner.Owner.Show();
             Owner.Close();
             Close();

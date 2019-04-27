@@ -69,6 +69,7 @@
     <Compile Include="Clases\Profile.cs" />
     <Compile Include="Clases\Survey.cs" />
     <Compile Include="Clases\User.cs" />
+    <Compile Include="Encrypt.cs" />
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
