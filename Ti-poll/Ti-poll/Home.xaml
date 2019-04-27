@@ -12,6 +12,7 @@
         </Grid.Background>
         <StackPanel Name="panel" Height="333" Margin="10,78,10.333,0" VerticalAlignment="Top" Background="White">
             <Label Content="Add" HorizontalAlignment="Center" VerticalAlignment="Top" MouseDown="Label_MouseDown"/>
+            <Button x:Name="stats_btn" Content="Button" Margin="0,0,-0.4,0" Click="stats_btn_Click"/>
         </StackPanel>
         <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
             <TextBox x:Name="searchbar" HorizontalAlignment="Right" Margin="0,30,27,17" TextWrapping="Wrap" Width="211" KeyDown="searchbar_KeyDown"/>

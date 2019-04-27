@@ -33,7 +33,7 @@
                 </TransformGroup>
             </ProgressBar.RenderTransform>
         </ProgressBar>
-        <ProgressBar x:Name="x_pb" HorizontalAlignment="Left" Height="39" Margin="399,239,0,0" VerticalAlignment="Top" Width="227" RenderTransformOrigin="0.5,0.5" Foreground="#FFFA1111">
+        <ProgressBar x:Name="x_pb" HorizontalAlignment="Left" Height="39" Margin="399,239,0,0" VerticalAlignment="Top" Width="227" RenderTransformOrigin="0.5,0.5" Foreground="Black">
             <ProgressBar.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
