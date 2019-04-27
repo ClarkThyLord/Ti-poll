@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Ti_poll.Clases;
 
 namespace Ti_poll
 {
@@ -37,6 +38,16 @@ namespace Ti_poll
 
         private void register_Click(object sender, RoutedEventArgs e)
         {
+            if (name.Text.Length == 0) return;
+            if (username.Text.Length == 0) return;
+            if (password.Password.Length == 0) return;
+            if (age.Text.Length == 0 || !int.TryParse(age.Text, out int Age)) return;
+
+            User client = new User(name.Text, username.Text, Age, password.Password, true);
+            
+            Database.data.Users.Add(client);
+            Database.data.save();
+
             redirect = true;
             Home home = new Home();
             home.Owner = Owner;

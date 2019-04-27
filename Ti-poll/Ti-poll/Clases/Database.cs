@@ -19,34 +19,62 @@ namespace Ti_poll.Clases
             }
         }
 
-        public static User User = null;
+        public static Database data = load();
 
-        public static int UsersCount = 0;
-        public static List<User> Users = new List<User>();
+        public static User CurrentUser = null;
 
-        public static void load()
+        private int usercount = 0;
+        public int UserCount {
+            get
+            {
+                usercount++;
+                return usercount - 1;
+            }
+            set { usercount = value; }
+        }
+
+        private int surverycount = 0;
+        public int SurveyCount
+        {
+            get
+            {
+                surverycount++;
+                return surverycount - 1;
+            }
+            set { surverycount = value; }
+        }
+
+        private int profilecount = 0;
+        public int ProfileCount
+        {
+            get
+            {
+                profilecount++;
+                return profilecount - 1;
+            }
+            set { profilecount = value; }
+        }
+
+        public List<User> Users = new List<User>();
+        public List<Survey> Surveys = new List<Survey>();
+        public List<Profile> Profiles = new List<Profile>();
+
+        public void save()
+        {
+            System.IO.Directory.CreateDirectory(PATH);
+            File.WriteAllText(FILE_PATH, JsonConvert.SerializeObject(this));
+        }
+
+        public static Database load()
         {
             if (File.Exists(FILE_PATH))
             {
-                Dictionary<string, dynamic> data = JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(File.ReadAllText(FILE_PATH));
-
-                UsersCount = data["UsersCount"];
-                Users = data["Users"];
+                return JsonConvert.DeserializeObject<Database>(File.ReadAllText(FILE_PATH));
             }
-        }
-
-        public static void save()
-        {
-            JsonConvert.SerializeObject(new Dictionary<string, dynamic> {
-                {
-                    "UsersCount",
-                    UsersCount
-                },
-                {
-                    "Users",
-                    Users
-                }
-            });
+            else
+            {
+                return new Database();
+            }
         }
     }
 }

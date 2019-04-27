@@ -12,26 +12,26 @@
         <Label Content="Name:" HorizontalAlignment="Left" Margin="66,195,0,0" VerticalAlignment="Top"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="66,226,0,0" VerticalAlignment="Top"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="66,256,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="136,195,0,0" TextWrapping="Wrap" Text="" Name="name_txt" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="136,230,0,0" TextWrapping="Wrap" Text="" Name="username_txt" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="136,267,0,0" TextWrapping="Wrap" Text="" Name="password_txt" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="136,195,0,0" TextWrapping="Wrap" Text="" x:Name="name" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="136,230,0,0" TextWrapping="Wrap" Text="" x:Name="username" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox HorizontalAlignment="Left" Height="23" Margin="136,267,0,0" x:Name="password" VerticalAlignment="Top" Width="120"/>
         <Label Content="Age" HorizontalAlignment="Left" Margin="66,287,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="136,299,0,0" TextWrapping="Wrap" Text="" Name="age_txt" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="136,299,0,0" TextWrapping="Wrap" Text="" Name="age" VerticalAlignment="Top" Width="120"/>
       
         <Label Content="Ethnicity" HorizontalAlignment="Left" Margin="391,287,0,0" VerticalAlignment="Top"/>
         <Label Content="Income" HorizontalAlignment="Left" Margin="391,313,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="463,259,0,0" TextWrapping="Wrap" Text="" Name="country_txt" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="463,317,0,0" TextWrapping="Wrap" Text="" Name="income_txt" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="463,259,0,0" TextWrapping="Wrap" Text="" x:Name="country" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="463,317,0,0" TextWrapping="Wrap" Text="" x:Name="income" VerticalAlignment="Top" Width="120"/>
   
-        <ComboBox x:Name="gender_box" HorizontalAlignment="Left" Margin="463,200,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="463,200,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Male"/>
             <ComboBoxItem Content="Female"/>
         </ComboBox>
-        <ComboBox x:Name="relationship_box" HorizontalAlignment="Left" Margin="463,230,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="relationship" HorizontalAlignment="Left" Margin="463,230,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Married"/>
             <ComboBoxItem Content="Single"/>
         </ComboBox>
-        <ComboBox x:Name="ethnicity_box" HorizontalAlignment="Left" Margin="463,290,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="ethnicity" HorizontalAlignment="Left" Margin="463,290,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="African"/>
             <ComboBoxItem Content="Asian"/>
             <ComboBoxItem Content="Hispanic"/>
