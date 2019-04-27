@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Clases\Client.cs" />
+    <Compile Include="Clases\Image.cs" />
+    <Compile Include="Clases\Product.cs" />
+    <Compile Include="Clases\Profile.cs" />
+    <Compile Include="Clases\Survey.cs" />
+    <Compile Include="Clases\User.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

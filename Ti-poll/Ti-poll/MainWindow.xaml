@@ -7,12 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400*"/>
-            <ColumnDefinition Width="393*"/>
-        </Grid.ColumnDefinitions>
-        <Label Content="Ti-Poll" HorizontalAlignment="Left" Margin="323,30,0,0" VerticalAlignment="Top" Height="95" Width="210" FontSize="50" Grid.ColumnSpan="2"/>
-        <TextBlock Height="30" Margin="290,0,283.333,246.667" TextWrapping="Wrap" VerticalAlignment="Bottom" Grid.ColumnSpan="2" OpacityMask="Black" Foreground="Black" Background="White"/>
-        <PasswordBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="30" Margin="290,205,0,0" VerticalAlignment="Top" Width="220"/>
+        
     </Grid>
 </Window>
