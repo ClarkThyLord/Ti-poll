@@ -31,10 +31,8 @@ namespace Ti_poll
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Start h = new Start();
-            h.Owner = this;
-            h.Show();
-            Hide();
+            Owner.Show();
+            Close();
         }
     }
 }
