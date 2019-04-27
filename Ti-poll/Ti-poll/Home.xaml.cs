@@ -23,5 +23,31 @@ namespace Ti_poll
         {
             InitializeComponent();
         }
+
+        private void searchbar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key==Key.Enter)
+            {
+
+            }
+        }
+
+        private void profile_button_Click(object sender, RoutedEventArgs e)
+        {
+            Perfil p = new Perfil();
+            p.Show();
+            p.Owner = this;
+            Hide();
+        }
+
+        private void points_button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void store_button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

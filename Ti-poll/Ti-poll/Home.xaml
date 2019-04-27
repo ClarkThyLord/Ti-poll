@@ -7,25 +7,25 @@
         mc:Ignorable="d"
         Title="Home" Height="450" Width="800">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="201" Margin="138,105,0,0" VerticalAlignment="Top" Width="514" Background="White"/>
-        <Button x:Name="Add_Survey" Content="+" HorizontalAlignment="Left" Height="62" Margin="361,311,0,0" VerticalAlignment="Top" Width="73" FontSize="48"/>
-        <Grid HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="793" Background="#FF173299">
-            <TextBox x:Name="searchbar" HorizontalAlignment="Left" Height="26" Margin="555,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
-            <ComboBox HorizontalAlignment="Left" Margin="394,30,0,0" VerticalAlignment="Top" Width="120" BorderBrush="White" SelectedIndex="0">
+        <StackPanel Height="201" Margin="138,105,141.333,0" VerticalAlignment="Top" Background="White"/>
+        <Button x:Name="Add_Survey" Content="+" Margin="361,311,359.333,0" FontSize="48" Height="62" VerticalAlignment="Top"/>
+        <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
+            <TextBox x:Name="searchbar" HorizontalAlignment="Right" Margin="0,30,27,17" TextWrapping="Wrap" Width="211" KeyDown="searchbar_KeyDown"/>
+            <ComboBox HorizontalAlignment="Right" Margin="0,31,279,21" Width="120" BorderBrush="White" SelectedIndex="0">
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF0F0F0" Offset="0"/>
                         <GradientStop Color="#FFE5E5E5" Offset="1"/>
                     </LinearGradientBrush>
                 </ComboBox.Background>
-                <ComboBoxItem Content="Search by:"/>
+                <ComboBoxItem Content="Search by:" IsEnabled="False" IsSelected="True"/>
                 <ComboBoxItem Content="Title"/>
                 <ComboBoxItem Content="Code"/>
             </ComboBox>
         </Grid>
-        <Button x:Name="profile_button" Content="Profile" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="73" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24"/>
-        <Button x:Name="points_button" Content="Points:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="73" Margin="90,0,0,0" Background="#FF173299" BorderBrush="#FF173299" FontSize="24" Foreground="White"/>
-        <Button x:Name="store_button" Content="Store" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="73" Margin="241,0,0,0" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24"/>
+        <Button x:Name="profile_button" Content="Profile" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="profile_button_Click"/>
+        <Button x:Name="points_button" Content="Points:" Margin="90,0,0,0" Background="#FF173299" BorderBrush="#FF173299" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="points_button_Click"/>
+        <Button x:Name="store_button" Content="Store" Margin="241,0,0,0" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" Height="73" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Click="store_button_Click"/>
 
     </Grid>
 </Window>
