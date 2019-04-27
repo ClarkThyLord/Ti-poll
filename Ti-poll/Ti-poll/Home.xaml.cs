@@ -42,12 +42,24 @@ namespace Ti_poll
 
         private void points_button_Click(object sender, RoutedEventArgs e)
         {
-
+            Store s = new Store();
+            s.Owner = this;
+            s.Show();
+            Hide();
         }
 
-        private void store_button_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void Add_Survey_Click(object sender, RoutedEventArgs e)
+        {
+            AddSurvey a = new AddSurvey();
+            a.Owner = this;
+            a.Show();
+            Hide();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Owner.Show();
         }
     }
 }
