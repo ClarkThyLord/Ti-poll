@@ -5,20 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Ti-poll" Height="450" MinHeight="450" Width="800" MinWidth="800" Icon="Assets/Ti-poll.png">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400*"/>
-            <ColumnDefinition Width="393*"/>
-        </Grid.ColumnDefinitions>
-        <Label Content="Ti-Poll" HorizontalAlignment="Left" Margin="323,30,0,0" VerticalAlignment="Top" Height="95" Width="210" FontSize="50" Grid.ColumnSpan="2"/>
-        <PasswordBox x:Name="pass_txt" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="30" Margin="290,205,0,0" VerticalAlignment="Top" Width="220"/>
-        <TextBox x:Name="user_txt" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="30" Margin="290,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
-        <Label Content="Username:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,154,0,0"/>
-        <Label Content="Password:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,207,0,0"/>
-        <Button x:Name="Login_button" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="315,262,0,0"/>
-        <Button x:Name="signup_button" Content="Sign Up" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,262,0,0" Grid.Column="1"/>
-        <Label Content="Survey Code:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="197,299,0,0"/>
-        <TextBox x:Name="survey_code" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="30" Margin="290,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" KeyDown="survey_code_KeyDown"/>
+        <Image Source="Assets/Ti-poll.png" Margin="367,10,356.6,310"/>
+        <Label Content="Ti-Poll" Margin="312,0,307.6,239" FontSize="50" Height="69" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"/>
+        <PasswordBox x:Name="pass_txt" Height="30" Margin="296,0,277.6,151" VerticalAlignment="Bottom"/>
+        <Label Content="Username:" VerticalAlignment="Bottom" Margin="203,0,511.6,206"/>
+        <TextBox x:Name="user_txt" Height="30" Margin="295,0,278.6,204" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+        <Label Content="Password:" VerticalAlignment="Bottom" Margin="203,0,516.6,153"/>
+        <Label Content="Survey Code:" VerticalAlignment="Bottom" Margin="176,0,512.6,61"/>
+        <TextBox x:Name="survey_code" Margin="295,0,278.6,57" TextWrapping="Wrap" KeyDown="survey_code_KeyDown" Height="30" VerticalAlignment="Bottom"/>
+        <StackPanel Orientation="Horizontal" Margin="348,0,330.6,104" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Button Margin="2" Padding="3" Content="Log-in" HorizontalAlignment="Center"/>
+            <Button Margin="2" Padding="3" Content="Register" HorizontalAlignment="Center"/>
+        </StackPanel>
     </Grid>
 </Window>
