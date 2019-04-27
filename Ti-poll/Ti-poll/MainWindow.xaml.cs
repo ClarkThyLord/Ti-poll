@@ -26,7 +26,7 @@ namespace Ti_poll
 
         public MainWindow()
         {
-            Database.load();
+            Database.data.save();
             InitializeComponent();
         }
 

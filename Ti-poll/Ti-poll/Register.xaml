@@ -30,11 +30,11 @@
             <ComboBoxItem Content="Male"/>
             <ComboBoxItem Content="Female"/>
         </ComboBox>
-        <ComboBox x:Name="relationship_box" HorizontalAlignment="Left" Margin="463,230,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="relationship" HorizontalAlignment="Left" Margin="463,230,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Married"/>
             <ComboBoxItem Content="Single"/>
         </ComboBox>
-        <ComboBox x:Name="ethnicity_box" HorizontalAlignment="Left" Margin="463,290,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="ethnicity" HorizontalAlignment="Left" Margin="463,290,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="African"/>
             <ComboBoxItem Content="Asian"/>
             <ComboBoxItem Content="Hispanic"/>

@@ -64,7 +64,6 @@
     <Compile Include="AddSurvey.xaml.cs">
       <DependentUpon>AddSurvey.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Clases\Client.cs" />
     <Compile Include="Clases\Database.cs" />
     <Compile Include="Clases\Product.cs" />
     <Compile Include="Clases\Profile.cs" />
