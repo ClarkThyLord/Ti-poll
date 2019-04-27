@@ -56,5 +56,10 @@ namespace Ti_poll
             a.Show();
             Hide();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Owner.Show();
+        }
     }
 }

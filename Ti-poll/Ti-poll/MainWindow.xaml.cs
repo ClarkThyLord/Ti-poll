@@ -38,8 +38,9 @@ namespace Ti_poll
         private void login_button_Click(object sender, RoutedEventArgs e)
         {
             Home h = new Home();
+            h.Owner = this;
             h.Show();
-            Close();
+            Hide();
             
         }
 
