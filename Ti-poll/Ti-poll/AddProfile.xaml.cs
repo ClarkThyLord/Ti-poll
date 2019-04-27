@@ -67,5 +67,10 @@ namespace Ti_poll
         {
             
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            questions_lb.Items.Remove(questions_lb.SelectedItem);
+        }
     }
 }
