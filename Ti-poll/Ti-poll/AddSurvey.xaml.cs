@@ -30,9 +30,21 @@ namespace Ti_poll
         {
             if (titulo_encuesta.Text.Length > 0 && categoria_encuesta.Text.Length > 0)
             {
-                survey = new Clases.Survey(privadopublico());
+                int[] owners = new int[]
+                {
+                    Clases.Database.CurrentUser.ID
+                };
+                survey = new Clases.Survey() {
+                    Name = titulo_encuesta.Text,
+                    Category = categoria_encuesta.Text,
+                    Public = privadopublico(),
+                    Owners = owners
+                };
+
+                Database.data.Surveys.Add(survey);
                 Database.CurrentUser.Surveys.Add(survey.ID);
                 Database.data.save();
+
                 AddQuestion aq = new AddQuestion();
                 aq.Owner = this;
                 aq.Show();

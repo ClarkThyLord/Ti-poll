@@ -41,5 +41,7 @@
             <Button Margin="10" Content="Add" VerticalAlignment="Top" HorizontalAlignment="Center" Click="AddSurvey"/>
             <!--<Button Margin="10" x:Name="stats_btn" Content="Button" Click="Stats_Click" HorizontalAlignment="Center"/>-->
         </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="277" Margin="10,78,0,0" VerticalAlignment="Top" Width="774" x:Name="surveys">
+        </StackPanel>
     </Grid>
 </Window>

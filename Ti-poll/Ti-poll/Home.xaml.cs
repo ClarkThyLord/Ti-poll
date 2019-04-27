@@ -36,14 +36,33 @@ namespace Ti_poll
                 //Console.WriteLine(Database.CurrentUser.Surveys.Count);
                 //List<Clases.Survey> surveys = new List<Clases.Survey>();
 
-                //foreach (int id in Database.CurrentUser.Surveys)
-                //{
-                //    surveys.Add(Database.data.GetSurvey(id));
-                //} 
+                foreach (int id in Database.CurrentUser.Surveys)
+                {
+                    Clases.Survey survey = Database.data.GetSurvey(id);
+                    Console.WriteLine(survey);
+                    if (survey != null)
+                    {
+                        Label label = new Label();
+                        label.Tag = id;
+                        label.Content = $"{survey.Name} | Category: {survey.Category} - Views: {survey.Views}";
+                        label.MouseDown += survey_Selected;
+                        surveys.Children.Add(label);
+                    }
+                }
 
                 //SurveyList.ItemsSource = surveys;
                 //SurveyList.Items.Refresh();
             }
+        }
+
+        private void survey_Selected(object sender, MouseButtonEventArgs e)
+        {
+            Label label = (Label)sender;
+
+            EditSurvey editsurvey = new EditSurvey(Database.data.GetSurvey((int)(label.Tag)));
+            editsurvey.Owner = this;
+            Hide();
+            editsurvey.Show();
         }
 
         private void Window_Closed(object sender, EventArgs e)

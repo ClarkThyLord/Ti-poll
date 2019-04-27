@@ -63,8 +63,11 @@ namespace Ti_poll
             
 
             Clases.Profile profile = new Clases.Profile(titulo_encuesta.Text,base64ImageRepresentation);
+
             Clases.Database.data.Profiles.Add(profile);
+            
             Clases.Database.data.save();
+
             profiles.Add(profile.ID);
             int num = titulo_encuesta.Text.Length;
             if (titulo_encuesta.Text.Length>0)
