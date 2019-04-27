@@ -25,6 +25,7 @@ namespace Ti_poll
         public Register()
         {
             InitializeComponent();
+            PageTwo.Visibility = Visibility.Hidden;
         }
 
         private void Window_Closed(object sender, EventArgs e)
@@ -36,21 +37,15 @@ namespace Ti_poll
             }
         }
 
-        private void registered_Click(object sender, RoutedEventArgs e)
+        private void continue_Click(object sender, RoutedEventArgs e)
         {
-            gender.Visibility = Visibility.Visible;
-            gender1.Visibility = Visibility.Visible;
-            country.Visibility = Visibility.Visible;
-            country1.Visibility = Visibility.Visible;
-            relationship.Visibility = Visibility.Visible;
-            relationship1.Visibility = Visibility.Visible;
-            income1.Visibility = Visibility.Visible;
-            income.Visibility = Visibility.Visible;
-            ethnicity.Visibility = Visibility.Visible;
-            ethnicity1.Visibility = Visibility.Visible;
-            finish_btn.Visibility = Visibility.Visible;
-            sex_lbl.Visibility = Visibility.Visible;
-            sex_txt.Visibility = Visibility.Visible;
+            
+            if (name.Text.Length >0 && username.Text.Length >0 && password.Password.Length >0 && age.Text.Length >0)
+            {
+                PageOne.Visibility = Visibility.Hidden;
+                PageTwo.Visibility = Visibility.Visible;
+            }
+
         }
 
         private void finished_Click(object sender, RoutedEventArgs e)
@@ -86,6 +81,12 @@ namespace Ti_poll
         private void cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            PageOne.Visibility = Visibility.Visible;
+            PageTwo.Visibility = Visibility.Hidden;
         }
     }
 }
