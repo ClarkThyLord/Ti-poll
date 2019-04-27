@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ti_poll.Clases
 {
-    class Profile
+    public class Profile
     {
         public int ID { get; }
         public bool Public = false;
