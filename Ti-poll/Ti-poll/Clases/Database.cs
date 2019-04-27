@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -75,6 +76,40 @@ namespace Ti_poll.Clases
             {
                 return new Database();
             }
+        }
+
+        public static string encrypt_text(string text)
+        {
+            text += "taco";
+
+            SHA512 sha = SHA512.Create();
+            byte[] bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(text));
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                sb.Append(bytes[i].ToString("x2"));
+            }
+
+            sha.Dispose();
+
+            return sb.ToString();
+        }
+
+        public User attempt_login(string username, string password)
+        {
+            password = encrypt_text(password);
+            return Users.Find(user => user.Nickname.ToLower() == username.ToLower() && user.Password == password);
+        }
+
+        public void login(User user)
+        {
+            CurrentUser = user;
+        }
+
+        public void logout()
+        {
+            CurrentUser = null;
         }
     }
 }

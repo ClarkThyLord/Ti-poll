@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Ti_poll.Clases;
 
 namespace Ti_poll
 {
@@ -38,6 +39,11 @@ namespace Ti_poll
 
         private void login_Click(object sender, RoutedEventArgs e)
         {
+            User user = Database.data.attempt_login(user_txt.Text, pass_txt.Password);
+            if (user == null) return;
+
+            Database.data.login(user);
+
             Home h = new Home();
             h.Owner = this;
             h.Show();
