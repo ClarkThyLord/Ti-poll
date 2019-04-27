@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace Ti_poll
 {
-    public class User
+    class User
     {
         public bool Registered { get; set; }
         public int Age { get; set; }
-        public enum Backgrounds { Gender, Relationship, Ethnicity, Income, Country, }
-        public Dictionary<Backgrounds, dynamic> Background = new Dictionary<Backgrounds, dynamic>();
+        public Dictionary<string, dynamic> Background = new Dictionary<string, dynamic>();
 
-        public User(bool Registred, int Age)
+        public User(bool Registered, int Age, Dictionary<string, dynamic> Background)
         {
             this.Registered = Registered;
             this.Age = Age;
-        }
-
-        public User(bool Registered, int Age, Dictionary<Backgrounds, dynamic> Background) : this(Registered, Age)
-        {
             this.Background = Background;
         }
     }

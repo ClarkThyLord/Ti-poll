@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace Ti_poll.Clases
 {
-    public class Product
+    class Product
     {
         public string Name;
         public int Cost;

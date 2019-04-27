@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-  </Reference>
     <Reference Include="GraphX.PCL.Common, Version=2.3.6.0, Culture=neutral, PublicKeyToken=a6cdb671d651b60a, processorArchitecture=MSIL">
       <HintPath>..\packages\GraphX.2.3.6.0\lib\net40-client\GraphX.PCL.Common.dll</HintPath>
     </Reference>
@@ -90,15 +87,10 @@
     <Compile Include="Clases\Profile.cs" />
     <Compile Include="Clases\Survey.cs" />
     <Compile Include="Clases\User.cs" />
-    <Compile Include="Register.xaml.cs">
-      <DependentUpon>Register.xaml</DependentUpon>
-     </Compile>
 
     <Compile Include="CustomChartControl.xaml.cs">
       <DependentUpon>CustomChartControl.xaml</DependentUpon>
-
-    <Compile Include="Start.xaml.cs">
-      <DependentUpon>Start.xaml</DependentUpon>
+    </Compile>
 
     <Compile Include="Start.xaml.cs">
       <DependentUpon>Start.xaml</DependentUpon>
@@ -109,7 +101,7 @@
     <Compile Include="Store.xaml.cs">
       <DependentUpon>Store.xaml</DependentUpon>
     </Compile>
-    <Compile EInclude="Survey.xaml.cs">
+    <Compile Include="Survey.xaml.cs">
       <DependentUpon>Survey.xaml</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen.xaml.cs">
@@ -159,10 +151,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Store.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Register.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
