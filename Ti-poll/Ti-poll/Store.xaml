@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Store" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/Webpage-background-image-50-opacity.png"/>
+        </Grid.Background>
         <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
             <Label Content="Store" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
             <Label Content="Points:" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="523,10,0,0" VerticalAlignment="Top" Width="236"/>
