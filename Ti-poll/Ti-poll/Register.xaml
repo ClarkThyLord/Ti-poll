@@ -19,16 +19,28 @@
         <Label Content="Age" HorizontalAlignment="Left" Margin="66,287,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="136,299,0,0" TextWrapping="Wrap" Text="" Name="age_txt" VerticalAlignment="Top" Width="120"/>
         <Button Name="finish_txt" Content="--" HorizontalAlignment="Left" Margin="463,343,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Visibility="Hidden"/>
-        <Label Content="Gender" HorizontalAlignment="Left" Margin="391,195,0,0" VerticalAlignment="Top"/>
-        <Label Content="Relationship" HorizontalAlignment="Left" Margin="391,230,0,0" VerticalAlignment="Top"/>
-        <Label Content="Country" HorizontalAlignment="Left" Margin="391,261,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gender" HorizontalAlignment="Left" Margin="391,198,0,0" VerticalAlignment="Top"/>
+        <Label Content="Relationship" HorizontalAlignment="Left" Margin="363,228,0,0" VerticalAlignment="Top"/>
+        <Label Content="Country" HorizontalAlignment="Left" Margin="385,259,0,0" VerticalAlignment="Top"/>
         <Label Content="Ethnicity" HorizontalAlignment="Left" Margin="391,287,0,0" VerticalAlignment="Top"/>
         <Label Content="Income" HorizontalAlignment="Left" Margin="391,313,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="463,195,0,0" TextWrapping="Wrap" Text="" Name="gender_txt" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="463,228,0,0" TextWrapping="Wrap" Text="" Name="relationship_txt" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="463,259,0,0" TextWrapping="Wrap" Text="" Name="country_txt" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="463,285,0,0" TextWrapping="Wrap" Text="" Name="ethnicity_txt" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="463,317,0,0" TextWrapping="Wrap" Text="" Name="income_txt" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="gender_box" HorizontalAlignment="Left" Margin="463,200,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
+        </ComboBox>
+        <ComboBox x:Name="relationship_box" HorizontalAlignment="Left" Margin="463,230,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Married"/>
+            <ComboBoxItem Content="Single"/>
+        </ComboBox>
+        <ComboBox x:Name="ethnicity_box" HorizontalAlignment="Left" Margin="463,290,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="African"/>
+            <ComboBoxItem Content="Asian"/>
+            <ComboBoxItem Content="Hispanic"/>
+            <ComboBoxItem Content="White"/>
+            <ComboBoxItem Content="Other"/>
+        </ComboBox>
 
     </Grid>
 </Window>
