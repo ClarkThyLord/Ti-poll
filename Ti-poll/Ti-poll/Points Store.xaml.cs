@@ -31,17 +31,25 @@ namespace Ti_poll
 
         private void Imagebtn_250_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            string answer = "Successfully purchase!";
+            MessageBox.Show(answer);
         }
 
         private void Imagebtn_500_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            string answer = "Successfully purchase!";
+            MessageBox.Show(answer);
         }
 
         private void Imagebtn_1000_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            string answer = "Successfully purchase!";
+            MessageBox.Show(answer);
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

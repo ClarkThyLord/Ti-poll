@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Home" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png" IsVisibleChanged="Window_IsVisibleChanged">
+        Title="Home" Height="496.4" Width="988.8" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png" IsVisibleChanged="Window_IsVisibleChanged">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Background.png"/>
@@ -27,7 +27,7 @@
             </ComboBox>
         </Grid>
         <Button x:Name="profile_button" Content="Profile" Background="#FFAF0D0D" BorderBrush="{x:Null}" Foreground="White" FontSize="24" HorizontalAlignment="Left" Width="117" Height="73" VerticalAlignment="Top" Click="profile_button_Click" FontFamily="Showcard Gothic"/>
-        <Button x:Name="points_button" Content="Points" Margin="117,0,0,0" Background="#FFAF0D0D" BorderBrush="{x:Null}" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="90" Height="73" VerticalAlignment="Top" Click="points_button_Click" FontFamily="Showcard Gothic"/>
-
+        <Button x:Name="points_button" Content="Giftcards" Margin="225,0,0,0" Background="#FFAF0D0D" BorderBrush="{x:Null}" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="148" Height="73" VerticalAlignment="Top" Click="points_button_Click" FontFamily="Showcard Gothic"/>
+        <Button x:Name="pointsMoney_button" Content="Points Store" Background="#FFAF0D0D" BorderBrush="{x:Null}" FontSize="24" Foreground="White" HorizontalAlignment="Left" Width="185" Height="73" VerticalAlignment="Top" FontFamily="Showcard Gothic" Margin="400,0,0,0" Click="PointsMoney_button_Click"/>
     </Grid>
 </Window>
