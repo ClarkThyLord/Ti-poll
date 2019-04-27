@@ -10,7 +10,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
-        <StackPanel Height="201" Margin="79,116,199.6,0" VerticalAlignment="Top" Background="White"/>
+        <StackPanel Height="215" Margin="37,116,199.6,0" VerticalAlignment="Top" Background="White">
+            <Button Content="Button" Height="95" Margin="0,0,450.8,0"/>
+        </StackPanel>
         <Button x:Name="Add_Survey" Content="+" Margin="635,273,31.6,0" FontSize="48" Height="121" VerticalAlignment="Top" Click="Add_Survey_Click" FontFamily="Showcard Gothic"/>
         <Grid Height="73" VerticalAlignment="Top" Background="#FFAF0D0D" Margin="0,0,0.333,0">
             <TextBox x:Name="searchbar" HorizontalAlignment="Right" Margin="0,30,27,17" TextWrapping="Wrap" Width="211" KeyDown="searchbar_KeyDown"/>
