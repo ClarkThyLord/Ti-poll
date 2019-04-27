@@ -15,7 +15,7 @@ namespace Ti_poll.Clases
         public string Category = "";
         public bool Public = false;
         public int Views = 0;
-        public List<Profile> profiles = new List<Profile>();
+        public List<int> profiles = new List<int>();
 
         // TO CREATE
         public Survey(bool Public)
@@ -26,7 +26,7 @@ namespace Ti_poll.Clases
 
         // TO LOAD
         [JsonConstructor]
-        public Survey (int ID, bool Public, List<Profile> profiles)
+        public Survey (int ID, bool Public, List<int> profiles)
         {
             this.ID = ID;
             this.profiles = profiles;
