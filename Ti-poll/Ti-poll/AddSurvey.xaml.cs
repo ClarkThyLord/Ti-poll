@@ -26,10 +26,24 @@ namespace Ti_poll
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AddQuestion aq = new AddQuestion();
-            aq.Owner = this;
-            aq.Show();
-            Hide();
+            if (titulo_encuesta.Text.Length > 0 && categoria_encuesta.Text.Length > 0)
+            {
+                
+                AddQuestion aq = new AddQuestion();
+                aq.Owner = this;
+                aq.Show();
+                Hide();
+                aq.name_lbl.Content = titulo_encuesta.Text;
+                
+            }
+            else
+            {
+                string h = "No deje espacios en blanco";
+                MessageBox.Show(h);
+            }
+
+
+            
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
