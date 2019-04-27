@@ -24,6 +24,12 @@ namespace Ti_poll
             InitializeComponent();
         }
 
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Owner.Show();
+            Close();
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             finish_txt.Visibility = Visibility.Visible;

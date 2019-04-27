@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ti_poll"
         mc:Ignorable="d"
-        Title="Store" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+        Title="Store" Height="450" Width="800" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Icon="Assets/Ti-poll.png">
     <Grid>
         <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
             <Label Content="Store" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="236"/>
