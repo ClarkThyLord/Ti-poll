@@ -67,7 +67,7 @@ namespace Ti_poll
                 gender.Text,
                 country1.Text,
                 ethnicity1.Text,
-                "",
+                sex_txt.Text,
                 relationship1.Text
             ));
 
