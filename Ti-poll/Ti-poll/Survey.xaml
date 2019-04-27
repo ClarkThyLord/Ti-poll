@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="Survey" Height="539.197" Width="809.643">
     <Grid>
-        <Label Content="Survey" HorizontalAlignment="Left" Height="64" Margin="10,10,0,0" VerticalAlignment="Top" Width="126" FontSize="38"/>
-        <TextBox x:Name="txtBOX_Pregunta" HorizontalAlignment="Left" Height="76" Margin="196,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="390"/>
-        <Image HorizontalAlignment="Left" Height="188" Margin="196,139,0,0" VerticalAlignment="Top" Width="390"/>
+        <Grid Height="73" VerticalAlignment="Top" Background="#FF173299" Margin="0,0,0.333,0">
+            <Label Content="Survey" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="152" Background="#FF173299" BorderBrush="#FF173299" Foreground="White" FontSize="24"/>
+        </Grid>
+        <TextBox x:Name="txtBOX_Pregunta" HorizontalAlignment="Left" Height="50" Margin="199,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="390"/>
+        <Image HorizontalAlignment="Left" Height="212" Margin="196,115,0,0" VerticalAlignment="Top" Width="390"/>
         <Button HorizontalAlignment="Left" Height="60" Margin="196,327,0,0" VerticalAlignment="Top">
             <StackPanel>
                 <Image Source="Images/Incorrect sign.png" Width="195" Height="60"></Image>
