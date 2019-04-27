@@ -16,8 +16,29 @@ namespace Ti_poll
         public string Password = "";
         public int Age = 0;
         public bool Registered = false;
-        public enum Backgrounds { Gender, Ethnicity, Income, Sexuality, Relationship, Country }
-        public Dictionary<Backgrounds, dynamic> Background = new Dictionary<Backgrounds, dynamic>();
+
+        public struct Background
+        {
+            public double Income;
+            public string Gender;
+            public string Country;
+            public string Ethnicity;
+            public string Sexuality;
+            public string Relationship;
+
+            public Background(double Income=-1, string Gender="", string Country="", string Ethnicity="", string Sexuality="", string Relationship="")
+            {
+                this.Income = Income;
+                this.Gender = Gender;
+                this.Country = Country;
+                this.Ethnicity = Ethnicity;
+                this.Sexuality = Sexuality;
+                this.Relationship = Relationship;
+            }
+        }
+        public Background Backgrounds = new Background();
+
+        public List<int> Surveys = new List<int>();
 
         // FOR CREATING
         public User(string Name, string Nickname, int Age, string Password, bool Registered)
@@ -30,9 +51,9 @@ namespace Ti_poll
             this.Registered = Registered;
         }
 
-        public User(string Name, string Nickname, int Age, string Password, bool Registered, Dictionary<Backgrounds, dynamic> Background) : this(Name, Nickname, Age, Password, Registered)
+        public User(string Name, string Nickname, int Age, string Password, bool Registered, Background Background) : this(Name, Nickname, Age, Password, Registered)
         {
-            this.Background = Background;
+            this.Backgrounds = Background;
         }
 
         // FOR LOADING
@@ -47,13 +68,9 @@ namespace Ti_poll
         }
 
         [JsonConstructor]
-        public User(int ID, string Name, string Nickname, int Age, string Password, bool Registered, Dictionary<Backgrounds, dynamic> Background) : this(ID, Name, Nickname, Age, Password, Registered)
+        public User(int ID, string Name, string Nickname, int Age, string Password, bool Registered, Background Background) : this(ID, Name, Nickname, Age, Password, Registered)
         {
-            this.Background = Background;
-        }
-
-        public User()
-        {
+            this.Backgrounds = Background;
         }
     }
 }

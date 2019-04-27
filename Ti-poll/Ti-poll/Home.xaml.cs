@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Ti_poll.Clases;
 
 namespace Ti_poll
 {
@@ -60,6 +61,11 @@ namespace Ti_poll
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Owner.Show();
+        }
+
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            profile_button.Content = Database.CurrentUser.Name;
         }
     }
 }

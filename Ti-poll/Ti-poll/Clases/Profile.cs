@@ -8,13 +8,14 @@ using System.Windows.Controls;
 
 namespace Ti_poll.Clases
 {
-    public class Profile
+    public class Profile // PREGUNTA
     {
         public int ID;
+        public int Views = 0;
         public string Question = "";
         public struct Response
         {
-            int Owner;
+            int Owner; // If -1 then it's a anonymous entry
             bool Answer;
 
             public Response(int Owner, bool Answer)
