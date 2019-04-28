@@ -1,6 +1,6 @@
 <p align="center">
 	<a>
-		<img width="128px" src="./Ti-poll/Ti-poll/Assets/Ti-poll.svg?sanitize=true" alt="MUSLY" />
+		<img width="128px" src="./Ti-poll/Ti-poll/Assets/Ti-poll.svg?sanitize=true" alt="TI-POLL" />
 		<h1 align="center">
 			Ti-poll
 		</h1>
